@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>GIRL’S TALKS プロフィール編集</title>
+  <meta name="description" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css">
+  <link rel="stylesheet" href="/files/css/katoken.css">
+  <link rel="stylesheet" href="/files/css/pullToRefresh.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="bar-title" id="header">
+        <a href="#" class="button back">戻る</a>
+        <h1 class="title elps"><img src="/files/img/logo.png" alt="Girl's Talk"></h1>
+      </div>
+    </header>
+
+    <div class="main entrance user-action">
+      <div class="box-prof">
+        <h2>あなたのトークネーム</h2>
+        <div class="section">
+          <div class="box-name"><p class="name">アナスタシア12908</p><button>変更する</button></div>
+          <p class="note"><span class="asterisk">※</span>初期設定後の変更はできません。</p>
+        </div>
+      </div>
+
+      <div class="box-prof">
+        <h2>ひとこと編集
+          <div class="counter"><em style="display:none;" id="overMessage">文字数の上限は100文字です</em><span id="cnt">100</span></div></h2>
+        <div class="section">
+          <textarea  id="entryTextarea" rows="4" placeholder="ひとことを書く(100文字)"></textarea>
+        </div>
+      </div>
+
+      <div class="box-prof">
+        <h2>年齢記入</h2>
+        <div class="section">
+        <select class="half">
+          <option>年齢を選択</option>
+          <option value="20">20歳</option>
+          <option value="21">21歳</option>
+          <option value="22">22歳</option>
+          <option value="23">23歳</option>
+          <option value="24">24歳</option>
+          <option value="25">25歳</option>
+          <option value="26" selected>26歳</option>
+          <option value="27">27歳</option>
+          <option value="28">28歳</option>
+          <option value="29">29歳</option>
+          <option value="30">30歳</option>
+        </select>
+        </div>
+      </div>
+
+      <div class="box-prof">
+        <h2>プロフィール設定</h2>
+        <div class="section">
+        <h3>■恋愛ステイタス（任意）</h3>
+        <select>
+          <option>恋愛ステータスを選択</option>
+          <option>片思い</option>
+          <option>相思相愛</option>
+          <option>複雑な関係</option>
+        </select>
+        <h3>■しあわせ度（任意）</h3>
+        <select>
+          <option>しあわせ度を選択</option>
+          <option value="0">しあわせじゃない</option>
+          <option value="1">♡</option>
+          <option value="2">♡♡</option>
+          <option value="3">♡♡♡</option>
+          <option value="4">♡♡♡♡</option>
+          <option value="5">♡♡♡♡♡</option>
+        </select>
+        <h3>■おしごと（任意）</h3>
+        <select>
+          <option>おしごとを選択</option>
+          <option>ナース</option>
+          <option>看護婦</option>
+          <option>女医</option>
+        </select>
+        <p class="or">または</p> 
+        <input type="text" placeholder="自由記入(8文字)" maxlength="8">
+        </div>
+      </div>
+
+      <p><button class="disabled btn" id="addProfile">完了</button></p>
+    </div><!-- /main -->
+
+    <nav class="nav-global" id="navGlobal">
+      <ul>
+        <li class="tab-fav"><a href="/html/fav/"><i></i>人気トーク</a></li>
+        <li class="tab-new"><a href="/html/category_new/"><i></i>新着トーク</a></li>
+        <li class="tab-hist"><a href="/html/hist/"><i></i>履歴</a></li>
+        <li class="tab-mypage active"><a href="/html/mypage/"><i></i>マイページ</a></li>
+      </ul>
+    </nav>
+
+    <div id="gt-amb-footer"></div>
+    <script src="http://stat.sb-amebame.com/pub/sdk/js/all.js"></script>
+
+  </div><!-- /container -->
+
+  <script src="/files/js/jquery-1.7.2.min.js"></script>
+  <script src="/files/js/jquery.ba-throttle-debounce.min.js"></script>
+  <script src="/files/js/common_new.js"></script>
+  <script>
+  
+  window.onload = function(){
+    profEdit.init();
+  };
+  </script>
+
+  <script>
+  var user = {
+    status : true,
+    redirectUrl : ''
+  };
+  /*
+  G-7 プロフィール編集
+  ----------------------------------------------------------------------*/
+  var profEdit = {
+    init : function(){
+
+      // 共通処理
+      init.ameba();
+      init.common();
+
+      profEdit.setCounter('#entryTextarea', '#cnt', 'over-class', profEdit.btnOff, profEdit.btnOn);
+
+    },
+    setCounter: function(textarea, counter, overClass, btnOffMethod, btnOnMethod){
+      
+      // 上限文字数をHTMLより取得
+      var maxSrc = $(counter).text(),
+          toggle = true,
+          $overMessage = $('#overMessage');
+
+      
+      // 文字数のチェック＆反映
+      var countFunc = function(){
+        var val = $(this).val(),
+            remainder = maxSrc - val.length;
+        
+        $(counter).text(remainder);
+        if(val.length === 0){
+          toggle = true;
+          $overMessage.hide();
+          if(btnOffMethod != undefined) btnOffMethod();
+        }else if(remainder < 0){
+          toggle = true;
+          $(counter).hide();
+          $overMessage.show();
+          if(btnOffMethod != undefined) btnOffMethod(); 
+        }else if(toggle){
+          toggle = false;
+          $(counter).show();
+          $overMessage.hide();
+          if(btnOffMethod != undefined) btnOnMethod();
+        }
+      };
+      // 入力イベントを取得して実行（ / 250ms）
+      $(textarea).keyup($.debounce(250, countFunc));
+    },
+    btnOff : function(){
+      $('#addProfile').attr('disabled', 'disabled').addClass('disabled');
+    },
+    btnOn : function(){
+      $('#addProfile').removeAttr('disabled').removeClass('disabled');
+    }
+  }　// -- myapage wall
+  </script>
+</body>
+</html>

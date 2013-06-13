@@ -1,0 +1,294 @@
+<html lang="ja">
+<script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
+<head>
+<meta charset="utf-8">
+<title>コメント詳細｜GIRL'S TALK(ガールズトーク)</title>
+<meta name="description" content="GIRL'S TALK(ガールズトーク)で誰にも話せないことをうちあけましょう。 安心の女性限定完全匿名コミュニティサービスです。 コメントの詳細ページはこちら。">
+<meta name="keywords" content="恋愛,悩み,女性,コメント詳細">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="/files/css/app.css?20121128">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="stylesheet" href="http://stat.amebame.com/pub/sdk/css/all-0.1.8.css">
+</head>
+<body>
+<div class="amb-header-container">
+  <header id="amb_header" class="amb_default amb">
+  <p id="amb_ci">
+    <a class="amb_anchor amb_ci_text" style="cursor: pointer; -webkit-user-select: none;" href="http://link.ameba.jp/155220/">ホームへ</a>
+  </p>
+  <button id="amb_noti" class="amb_button" style="cursor: pointer; -webkit-user-select: none;"><span class="amb_header_noti_counter" style="visibility: hidden;"></span></button></header>
+</div>
+<div class="container">
+  <header>
+  <div class="bar-title">
+    <a href="javascript:history.back();" class="button back">戻る</a>
+    <h1 class="title elps">コメント</h1>
+    <a href="javascript:void(0);" class="right" id="btnDraft" style="display:none;">保存中</a>
+  </div>
+  </header>
+  <div class="main detail">
+    <div id="pullToRefreshTop">
+      <div id="pullToRefresh" style="height: 50px; padding: 0px; margin-top: -50px; margin-left: 133px; overflow: hidden; visibility: visible;">
+        <div style="width: 9999px; height: 50px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACFUlEQVRo3u2ZvW7UUBCFPychPw1VGlAEyRsQ3a356ahA4g2ggHqlPMCmSMkqFR1Sepo8AeQB9mgjCkA0iYiEUkTKhkihXJpbWFF+xvZ4fS12JDf2eMbnzpzj8XU2Ho8pYlmWXXsthLACrBjCfJP056oLRZ9nDl+bAe5Y1sEroTeA2bYDsFZgJlUAv4FTg9+5V8LMk8Qe1iiJQwirwJrBdShplGIL3QXuW2Q0ZRLP/w8ymqwKHQPDqQo1qEIPgIcG16+SzlJsoTXgicHvF3CWKonn20zi1gM4AD4b/E69Ek5V6JIKLQPLFhJLukixhR4Drwx+W8D3FAHMAQttVyELgGSHuRPgh8Hv71SFalKhe8YPmp+SzlNsoRfAO4PfW2CQqgottpnEE5fRwiTudDofgec1cfj9YDDo112BHvCyJgCfyuwiFDJJR0AfWHI++jH2RDjwAXgDrDqt/GGMSe0ViFUYARtxdPA4Nsru1FV6E4cQvgBPK67+nqRnZd/EVeWs69A+lWJUAiBpH9iuEGI7xmgGQLRNoEz/juK9NAogkq9MG3Q9ttjdxukQwhB4ZAyzL2ndY5x2m0kKVqHrldQNgKQ9YMfguhN90wKQW9nRLcTteiZ0BRBJeZOybHr9G6v1mziEcHDFnHQo6dYfgE2SOG+vjeeS40Ce0Lu5U7uexJ1EBfKEdidu7RzIcaEXK9Kz3lP0ef4BgZzBy5qP/wgAAAAASUVORK5CYII=" style="width: 24px; height: 24px; zoom: 1; vertical-align: 13px;"><canvas width="400" height="50"></canvas>
+        </div>
+      </div>
+      <!-- threads -->
+      <ul class="threads my wall detail">
+        <li class="thread" id="p_template">
+        <div class="comment" id="template">
+          <script id="thread" type="text/html"> {?p_nickname} <div class="wrapper-parent newNode"> <div class="line-text"> <p class="line-info"> <a href="{p_user_page}" class="name" data-master={is_talk_master}>{p_nickname}（{p_age}歳）<span class="id">ID:{p_id_str}</span></a> <span class="timestamp">{p_time}</span> </p> <p>{p_text|s}<p> </div> <p class="line-action clearfix"> <button class="btn-comment" id="btnComment">{p_comment_count}</button> <button class="btn-like" data-iine-api="{p_iine_api_url}" data-iine-cancel-api="{p_iine_cancel_api_url}" data-is-iine="{is_iine_p_comment}" data-iine-type="comment">{p_iine_count}</button> </p> {?p_del_url}<div class="box-btn-del"><button class="btn-del" data-del-api="{p_del_url}" data-del-type="page">削除</button></div>{:else}{/p_del_url} </div> {/p_nickname} {#c_comment} <div class="wrapper-child newNode" style="position: relative;"> <div class="child"> <p class="line-info"><a href="{c_user_page}" class="name" data-master={is_talk_master}>{c_nickname}（{c_age}歳）<span class="id">ID:{c_id_str}</span></a><span class="timestamp">{c_time}</span></p> <p class="line-text">{c_text|s}<p> <p class="line-action clearfix"> <button class="btn-comment zero" id="btnComment" data-type="c"></button> <button class="btn-like" data-iine-api="{c_iine_api_url}" data-iine-cancel-api="{c_iine_cancel_api_url}" data-is-iine="{is_iine_c_comment}" data-iine-type="comment">{c_iine_count}</button> </p> </div><!-- /child --> {?c_del_url}<div class="box-btn-del"><button class="btn-del" data-del-api="{c_del_url}" data-del-parents="1">削除</button></div>{:else}{/c_del_url} </div> {:else}{/c_comment} </script>
+          <div class="wrapper-parent">
+            <div class="line-text">
+              <p class="line-info">
+                <a href="/user/110322" class="name" data-master="FALSE">リカ（35歳）<span class="id">ID:2HqMY</span></a><span class="timestamp">7分前</span>
+              </p>
+              <p>
+                14歳って言ってて18歳になってるけど釣りですか？1<br>
+              </p>
+              <p>
+              </p>
+            </div>
+            <p class="line-action clearfix">
+              <button class="btn-comment" id="btnComment">1</button><button class="btn-like zero" data-iine-api="/api/fav/iine/2/240188" data-iine-cancel-api="/api/fav/iine_cancel/2/240188" data-is-iine="FALSE" data-iine-type="comment"></button>
+            </p>
+          </div>
+          <div class="wrapper-child" style="position: relative;">
+            <div class="child">
+              <p class="line-info">
+                <a href="/user/44185" class="name" data-master="FALSE">レオ（34歳）<span class="id">ID:x23K3</span></a><span class="timestamp">1分前</span>
+              </p>
+              <p class="line-text">
+                このサイト18才以上しか参加できない事にいちをなっているからじゃないでしょうか？
+              </p>
+              <p>
+              </p>
+              <p class="line-action clearfix">
+                <button class="btn-comment zero" id="btnComment" data-type="c"></button><button class="btn-like zero" data-iine-api="/api/fav/iine/3/240229" data-iine-cancel-api="/api/fav/iine_cancel/3/240229" data-is-iine="FALSE" data-iine-type="comment"></button>
+              </p>
+            </div>
+            <!-- /child -->
+          </div>
+        </div>
+        <!-- /comment -->
+        <!--もっとみる-->
+        
+        <!--トークへ戻る-->
+        <div class="back-page"><button>トークへ戻る</button></div>
+
+        </li>
+      </ul><!-- /threads -->
+      <div class="box-comment" id="boxComment"><p>コメントする</p></div>
+
+      <div class="js-migration" id="js-migration-few">
+        <div class="box-rel">
+          <div class="inner">
+            <h2>コメント待ちのトーク</h2>
+            <ul class="threads top">
+              <li class="thread" data-talk-url="/talk/detail/2735">
+              <div class="talk">
+                <p class="line-text c-love">
+                  <em>体</em>育祭があってアドレス書いた紙を渡したら3日後位にきたよ！そんなに連絡とってなかったけどもう全然メール来なくなっ...
+                </p>
+                <p class="line-cate">
+                  <a href="/new/100116">(恋愛＞恋愛総合)</a>
+                </p>
+                <p class="line-info">
+                  <a href="/user/21890" class="name">カイリ（19歳）<span class="id">ID:XqboQ</span></a><span class="timestamp">2012/09/29</span>
+                </p>
+              </div>
+              </li>
+              <li class="thread" data-talk-url="/talk/detail/3475">
+              <div class="talk">
+                <p class="line-text c-love">
+                  <em>ヤ</em>キモチやきを直したーい(泣)
+                </p>
+                <p class="line-cate">
+                  <a href="/new/100116">(恋愛＞恋愛総合)</a>
+                </p>
+                <p class="line-info">
+                  <a href="/user/26612" class="name">イレール（19歳）<span class="id">ID:AZz5k</span></a><span class="timestamp">2012/10/04</span>
+                </p>
+              </div>
+              </li>
+              <li class="thread" data-talk-url="/talk/detail/3505">
+              <div class="talk">
+                <p class="line-text c-love">
+                  <em>M</em>です(T-T)
+                </p>
+                <p class="line-cate">
+                  <a href="/new/100116">(恋愛＞恋愛総合)</a>
+                </p>
+                <p class="line-info">
+                  <a href="/user/26806" class="name">ロベルタ（22歳）<span class="id">ID:uhQNL</span></a><span class="timestamp">2012/10/05</span>
+                </p>
+              </div>
+              </li>
+              <li class="more-contents right"><a href="/fav">人気トーク一覧へ</a></li>
+            </ul>
+            <!-- /threads -->
+          </div>
+        </div>
+        <!-- /box-rel -->
+      </div>
+      <ul class="sub-nav-category clearfix" id="js-migration-cat">
+        <li class="c-feature"><a href="/new/all/9998"><i></i>芸能人に相談</a></li>
+        <li class="c-love"><a href="/new/all/1001"><i></i>恋愛</a></li>
+        <li class="c-nightlife"><a href="/new/all/1005"><i></i>ナイトライフ</a></li>
+        <li class="c-mind"><a href="/new/all/1004"><i></i>ココロとカラダ</a></li>
+        <li class="c-work"><a href="/new/all/1002"><i></i>おしごと</a></li>
+        <li class="c-home"><a href="/new/all/1003"><i></i>家庭</a></li>
+        <li class="c-chat"><a href="/new/all/1006"><i></i>雑談</a></li>
+        <li class="c-new"><a href="/new/talks"><i></i>新着トーク</a></li>
+      </ul>
+      <div class="js-migration" id="js-migration-many">
+        <script id="migration_many" type="text/html"> <div class="box-rel"><div class="inner"> <h2>コメント数が多いトーク</h2> <ul class="threads top"> {?many_comment_talk} {#many_comment_talk}{>migration_thread/}{/many_comment_talk} {:else} {>migration_empty/} {/many_comment_talk} <li class="more-contents right"><a href="/new/talks">新着トーク一覧へ</a></li> </ul><!-- /threads --> </div></div><!-- /box-rel --> </script>
+        <div class="box-rel">
+          <div class="inner">
+            <h2>コメント数が多いトーク</h2>
+            <ul class="threads top">
+              <li class="thread" data-talk-url="/talk/detail/12095">
+              <div class="talk">
+                <p class="line-text c-love">
+                  <em>彼</em>氏の前で、オナラってできますか？私は絶対できないんですが、友人にそれくらい平気でできなきゃ完全に打ち解けられて...
+                </p>
+                <p class="line-cate">
+                  <a href="/new/100116">(恋愛＞恋愛総合)</a>
+                </p>
+                <p class="line-info">
+                  <a href="/user/29413" class="name">ミシェル（27歳）<span class="id">ID:cbzXm</span></a><span class="timestamp">2012/11/09</span>
+                </p>
+              </div>
+              </li>
+              <li class="thread" data-talk-url="/talk/detail/26410">
+              <div class="talk">
+                <p class="line-text c-love">
+                  <em>彼</em>の浮気疑惑があってから、相手の携帯を見たくなってしまいます。見ちゃいけないとわかってはいてもどーしても気になっ...
+                </p>
+                <p class="line-cate">
+                  <a href="/new/100116">(恋愛＞恋愛総合)</a>
+                </p>
+                <p class="line-info">
+                  <a href="/user/50516" class="name">ロレーヌ（21歳）<span class="id">ID:kof2s</span></a><span class="timestamp">2012/11/25</span>
+                </p>
+              </div>
+              </li>
+              <li class="thread" data-talk-url="/talk/detail/21378">
+              <div class="talk">
+                <p class="line-text c-love">
+                  <em>大</em>好きな人がいる方、恋ばなしましょ＼(^o^)／
+                </p>
+                <p class="line-cate">
+                  <a href="/new/100116">(恋愛＞恋愛総合)</a>
+                </p>
+                <p class="line-info">
+                  <a href="/user/106075" class="name">ティナ（22歳）<span class="id">ID:bVq2c</span></a><span class="timestamp">2012/11/23</span>
+                </p>
+              </div>
+              </li>
+              <li class="more-contents right"><a href="/new/talks">新着トーク一覧へ</a></li>
+            </ul>
+            <!-- /threads -->
+          </div>
+        </div>
+        <!-- /box-rel -->
+      </div>
+      <div id="gt-amb-footer">
+        <div id="amb_footer" class="amb amb_authed">
+          <ul id="amb_footer_utility">
+            <li class="amb_utility_item"><a class="amb_anchor amb_tx_link" style="cursor: pointer; -webkit-user-select: none;" href="https://s.amebame.com/#contact/app/8572d14da058fe5c8110f1583a35a515966e3fe6d9066c6e664be981a3b45304?callback=http%3A%2F%2Fwww.ca-girlstalk.jp%2Ftalk%2Fcomment_detail%2F240188">お問い合わせ</a></li>
+          </ul>
+          <ul id="amb_footer_usr_action">
+            <li class="amb_action_item"><button id="amb_footer_btn_friend" class="amb_button" style="cursor: pointer; -webkit-user-select: none;">友だち招待</button></li>
+          </ul>
+          <div id="amb_footer_pr_box">
+            <p>
+              <a id="amb_footer_text_pr" class="amb_anchor amb_tx_link amb_new" style="cursor: pointer; -webkit-user-select: none;" href="http://sr.ca-mpr.jp/s/10/?i4a=596820">超かわいい★ピグアイテム無料</a>
+            </p>
+          </div>
+          <div id="amb_footer_fun_box">
+            <a class="amb_anchor" style="cursor: pointer; -webkit-user-select: none;" href="http://sr.ca-mpr.jp/s/10/?i4a=51075"><i class="amb_thumbnail amb_smaller app" style="background-image: url(http://stat.amebame.com/pub/pr/home/ameba/footer/fun/tenku1203.jpg);"></i>
+            <div id="amb_footer_fun_detail">
+              <p class="amb_title amb_star">
+                ＣＭで話題沸騰中♪
+              </p>
+              <p class="amb_msg">
+                ☆女性に大人気☆やっていないと流行に乗り遅れる！？
+              </p>
+            </div>
+            </a>
+          </div>
+          <div id="amb_navWrap">
+            <div class="pickUpTextWrap">
+              <div id="amb_footer_pickUpText" class="amb_game" style="cursor: pointer; -webkit-user-select: none;">
+                <a class="amb_anchor amb_message" href="http://sr.ca-mpr.jp/s/10/?i4a=586600&amp;frm_id=c.amm-footer_l.dr-game_r.am-mini&amp;pickup_id=34f747a0-3a28-11e2-bec0-00262d0bd678">11月30日 ＣＭ放送キャンペーン開催中！</a>
+              </div>
+            </div>
+            <nav id="amb_nav">
+            <ul class="amb_nav_list">
+              <li class="amb_nav_item amb_home"><a class="amb_anchor" style="cursor: pointer; -webkit-user-select: none;" href="http://link.ameba.jp/153805/"><span class="amb_label">ホーム</span></a></li>
+              <li class="amb_nav_item amb_game"><a class="amb_anchor" style="cursor: pointer; -webkit-user-select: none;" href="http://sr.ca-mpr.jp/s/10/?i4a=586600&amp;frm_id=c.amm-footer_l.dr-game_r.am-mini"><span class="amb_label">ゲーム</span></a></li>
+              <li class="amb_nav_item amb_community"><a class="amb_anchor" style="cursor: pointer; -webkit-user-select: none;" href="http://sr.ca-mpr.jp/s/10/?i4a=586599&amp;frm_id=c.amm-footer_l.dr-ctop_r.am-mini"><span class="amb_label">コミュニティ</span></a></li>
+              <li class="amb_nav_item amb_notifications"><a class="amb_anchor" style="cursor: pointer; -webkit-user-select: none;" href="http://link.ameba.jp/153808/"><span class="amb_label">お知らせ</span></a><span class="amb_footer_nav_counter" style="visibility: hidden;"></span></li>
+            </ul>
+            </nav>
+          </div>
+          <p id="amb_copyright">
+            © CyberAgent, Inc.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /pullToRefreshTop -->
+  </div>
+  <!-- /main -->
+  <nav class="nav-global" id="navGlobal" style="top: 1152px;">
+  <ul>
+    <li class="tab-new active"><a href="/category_new"><i></i>トップページ</a></li>
+    <li class="tab-fav"><a href="/fav"><i></i>人気トーク</a></li>
+    <li class="tab-hist"><a href="/hist"><i></i>履歴</a></li>
+    <li class="tab-mypage"><a href="/mypage"><i></i>マイページ</a></li>
+  </ul>
+  </nav>
+</div>
+<!-- /container -->
+<!-- 投稿画面 display:none -->
+<div id="entryView">
+  <header>
+  <div class="bar-title">
+    <a href="javascript:void(0);" class="back" id="entryViewCancel">キャンセル</a>
+    <h1 class="title elps">コメントする</h1>
+    <a href="javascript:void(0);" class="right disabled" id="addComment">投稿する</a>
+  </div>
+  </header>
+  <div class="main detail">
+    <div class="post-area comments" id="commentControlBox">
+      <div class="counter">
+        <button id="entryViewDraft">下書き保存</button><em id="overMessage">上限は400文字です。</em>
+        <div id="cnt">
+          400
+        </div>
+      </div>
+      <textarea rows="14" placeholder="コメントする" id="entryTextarea"></textarea>
+    </div>
+  </div>
+  <!-- /main -->
+</div>
+<!-- /投稿画面 -->
+
+<script src="/files/js/zepto.min.js"></script>
+<script src="/files/js/girlstalk.min.js?20121129"></script>
+<script>
+  $(document).ready(function(){ 
+    GST.page.comment('/default/talk/comment_detail/240188', '0d531fc06d8704b2fb7fdf8e4aca4604c494c5fa', '240188');
+  });
+</script>
+<script>__reloadServerUrl="ws://localhost:8001";</script>
+<script src="//localhost:8001/__reload/client.js"></script>
+</body>
+</html>

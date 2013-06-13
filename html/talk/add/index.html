@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>GIRL’S TALKS トーク投稿</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="bar-title">
+        <a href="javascript:window.scrollTo(0, 100);" class="button back">戻る</a>
+        <h1 class="title elps">うちあける</h1>
+        <a href="javascript:void(0);" class="button right disabled" id="addTalk">投稿する</a>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="post-area">
+        <div class="bar-opt">
+
+<select name="l_category_id" id="cat1">
+<option>ジャンル</option>&gt;
+  <option value="1001">恋愛</option>
+  <option value="1002" selected="">お仕事</option>
+  <option value="1003">家庭</option>
+  <option value="1004">心と体</option>
+  <option value="1005">ナイトライフ</option>
+  <option value="1006">雑談</option>
+</select>
+<span class="select-divider"></span>
+<select name="m_category_id" id="cat2">
+<option>カテゴリ</option>&gt;
+  <option class="sub_1001" value="100101">片思い</option>
+  <option class="sub_1001" value="100102">独身貴族</option>
+  <option class="sub_1001" value="100103">失恋</option>
+  <option class="sub_1001" value="100104">遠距離恋愛</option>
+  <option class="sub_1001" value="100105">復縁</option>
+  <option class="sub_1001" value="100106">婚活</option>
+  <option class="sub_1001" value="100107">結婚</option>
+  <option class="sub_1001" value="100108">離婚</option>
+  <option class="sub_1001" value="100109">浮気</option>
+  <option class="sub_1001" value="100110">不倫</option>
+  <option class="sub_1001" value="100111">不妊</option>
+  <option class="sub_1001" value="100112">中絶</option>
+  <option class="sub_1001" value="100113">同性愛</option>
+  <option class="sub_1001" value="100114">社内恋愛</option>
+  <option class="sub_1001" value="100115">ダメ男</option>
+  <option class="sub_1002" value="100201">上司</option>
+  <option class="sub_1002" value="100202" selected="">部下</option>
+  <option class="sub_1002" value="100203">同期</option>
+  <option class="sub_1002" value="100204">キャリア</option>
+  <option class="sub_1002" value="100205">転職</option>
+  <option class="sub_1002" value="100206">パワハラ</option>
+  <option class="sub_1002" value="100207">セクハラ</option>
+  <option class="sub_1002" value="100208">業界</option>
+  <option class="sub_1002" value="100209">ブラック企業</option>
+  <option class="sub_1002" value="100210">人間関係</option>
+  <option class="sub_1002" value="100211">アルバイト・パート</option>
+  <option class="sub_1002" value="100212">夜の世界・家庭</option>
+  <option class="sub_1003" value="100301">夫婦関係</option>
+  <option class="sub_1003" value="100302">親子関係</option>
+  <option class="sub_1003" value="100303">姑・舅</option>
+  <option class="sub_1003" value="100304">妊娠・出産・育児</option>
+  <option class="sub_1003" value="100305">子育て・教育</option>
+  <option class="sub_1003" value="100306">ママ友</option>
+  <option class="sub_1003" value="100307">お受験</option>
+  <option class="sub_1003" value="100308">介護</option>
+  <option class="sub_1003" value="100309">ご近所付き合い</option>
+  <option class="sub_1003" value="100310">借金・ローン</option>
+  <option class="sub_1004" value="100401">悩み</option>
+  <option class="sub_1004" value="100402">ダイエット</option>
+  <option class="sub_1004" value="100403">ファッション</option>
+  <option class="sub_1004" value="100404">整形</option>
+  <option class="sub_1004" value="100405">過食</option>
+  <option class="sub_1004" value="100406">拒食</option>
+  <option class="sub_1005" value="100501">ワンナイトラブ</option>
+  <option class="sub_1005" value="100502">セックスフレンド</option>
+  <option class="sub_1005" value="100503">セックス中毒</option>
+  <option class="sub_1005" value="100504">一人エッチ</option>
+  <option class="sub_1005" value="100505">セックスレス</option>
+  <option class="sub_1005" value="100506">性欲</option>
+  <option class="sub_1006" value="100601">馴れ合い</option>
+  <option class="sub_1006" value="100602">Q&amp;A</option>
+  <option class="sub_1006" value="100603">女友達</option>
+  <option class="sub_1006" value="100604">アラサー</option>
+  <option class="sub_1006" value="100605">独身</option>
+  <option class="sub_1006" value="100606">ニュース速報</option>
+  <option class="sub_1006" value="100607">テレビ番組</option>
+  <option class="sub_1006" value="100608">アニメ</option>
+  <option class="sub_1006" value="100609">地域</option>
+  <option class="sub_1006" value="100610">韓流</option>
+  <option class="sub_1006" value="100611">ジャニーズ</option>
+  <option class="sub_1006" value="100612">宝塚</option>
+  <option class="sub_1006" value="100613">エンタメ</option>
+  <option class="sub_1006" value="100614">ギャンブル</option>
+  <option class="sub_1006" value="100615">妄想</option>
+</select>
+
+        </div>
+
+        <div class="counter">
+          <em id="overMessage">文字数の上限は1000文字です。</em>
+          <div id="cnt">1000</div>
+        </div>
+        <textarea rows="10" id="talkTextarea" placeholder=""></textarea>
+        <!--<textarea rows="6" id="talkTextarea" class="placeholder">彼氏と笑いのツボが合いません。結婚を考えているのですが、本当にこのまま結婚していいのか不安です。</textarea>-->
+      </div>
+    </div><!-- /main -->
+
+   <nav class="nav-global" id="navGlobal">
+      <ul>
+        <li class="tab-fav"><a href="/fav/"><i></i>人気トーク</a></li>
+        <li class="tab-new"><a href="/category_new/"><i></i>新着トーク</a></li>
+        <li class="tab-hist"><a href="/hist/"><i></i>履歴</a></li>
+        <li class="tab-mypage"><a href="/mypage/"><i></i>マイページ</a></li>
+      </ul>
+    </nav>
+
+  </div><!-- /container -->
+</body>
+</html>

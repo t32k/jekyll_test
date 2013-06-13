@@ -1,0 +1,156 @@
+{
+	"cat": [
+		{
+			"cat_name": "すべて",
+			"cat_title_en": "all",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "恋愛",
+			"cat_title_en": "love",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "お仕事",
+			"cat_title_en": "work",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "家庭",
+			"cat_title_en": "home",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "心と体",
+			"cat_title_en": "mind",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "ナイトライフ",
+			"cat_title_en": "nightlife",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "雑談",
+			"cat_title_en": "chat",
+			"api_url": "/html/json/api-fav-all.json" 
+		}
+	],
+	"talk": [
+		{
+			"cat_title_en": "love",
+			"talk_id": "10987654321",
+			"name": "アナスタシア12098",
+			"user_page": "/html/mypage/",
+			"age": 28,
+			"time": "10分前",
+			"text": "彼氏との笑いのツボが合いません。<br>コンビ結成を考えているのですが本当にこのまま吉本でデビューしても大丈夫なのか不安で...",
+			"comment_count": 3,
+			"iine_count": 4,
+			"iine_api_url": "/api/fav/iine/1/12345678901/",
+			"iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+			"is_iine_talk": false,
+			"talk_del_url": "/html/json/api-del.json",
+			"p_name": "エミ12345",
+			"p_user_page": "/html/user/",
+			"p_age": 20,
+			"p_time": "5分前",
+			"p_text": "そういうときって相手も同じ事を思っている高そうですよね。お互いコンビ解消するほど...",
+			"talk_url": "/html/talk/detail/"
+		},
+		{
+			"cat_title_en": "work",
+			"talk_id": "10987654321",
+			"name": "ルミカ129098",
+			"user_page": "/html/mypage/",
+			"age": 26,
+			"time": "10分前",
+			"text": "私はお酒が飲めません。コンビ結成を考えているのですが本当にこのまま吉本でデビューしても大丈夫なのか不安で...",
+			"comment_count": 0,
+			"iine_count": 4,
+			"iine_api_url": "/api/fav/iine/1/12345678901/",
+			"iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+			"is_iine_talk": false,
+			"talk_url": "/html/talk/detail/"
+		},
+		{
+			"cat_title_en": "love",
+			"talk_id": "10987654321",
+			"name": "アナスタシア12098",
+			"user_page": "/html/mypage/",
+			"age": 28,
+			"time": "10分前",
+			"text": "季節感のツボが合いません。コンビ結成を考えているのですが本当にこのまま吉本でデビューしても大丈夫なのか不安で...",
+			"comment_count": 3,
+			"iine_count": 4,
+			"iine_api_url": "/api/fav/iine/1/12345678901/",
+			"iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+			"is_iine_talk": true,
+			"talk_del_url": "/html/json/api-del.json",
+			"p_name": "エミ12345",
+			"p_user_page": "/html/mypage/",
+			"p_age": 20,
+			"p_time": "5分前",
+			"p_text": "そういうときって相手も同じ事を思っている高そうですよね。お互いコンビ解消するほど...",
+			"talk_url": "/html/talk/detail/"
+		},
+		{
+			"cat_title_en": "love",
+			"talk_id": "10987654321",
+			"name": "ルミカ129098",
+			"user_page": "/html/mypage/",
+			"age": 26,
+			"time": "10分前",
+			"text": "彼氏との笑いのツボが合いません。コンビ結成を考えているのですが本当にこのまま吉本でデビューしても大丈夫なのか不安で...",
+			"comment_count": 3,
+			"iine_count": 4,
+			"iine_api_url": "/api/fav/iine/1/12345678901/",
+			"iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+			"is_iine_talk": true,
+			"p_name": "エミ12345",
+			"p_user_page": "/html/mypage/",
+			"p_age": 20,
+			"p_time": "5分前",
+			"p_text": "そういうときって相手も同じ事を思っている高そうですよね。お互いコンビ解消するほど...",
+			"talk_url": "/html/talk/detail/"
+		},
+		{
+			"cat_title_en": "work",
+			"talk_id": "10987654321",
+			"name": "ルミカ129098",
+			"user_page": "/html/mypage/",
+			"age": 26,
+			"time": "10分前",
+			"text": "私はお酒が飲めません。コンビ結成を考えているのですが本当にこのまま吉本でデビューしても大丈夫なのか不安で...",
+			"comment_count": 3,
+			"iine_count": 4,
+			"iine_api_url": "/api/fav/iine/1/12345678901/",
+			"iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+			"is_iine_talk": false,
+			"p_name": "エミ12345",
+			"p_user_page": "/html/mypage/",
+			"p_age": 20,
+			"p_time": "5分前",
+			"p_text": "そういうときって相手も同じ事を思っている高そうですよね。お互いコンビ解消するほど...",
+			"talk_url": "/html/talk/detail/"
+		},
+		{
+			"cat_title_en": "love",
+			"talk_id": "10987654321",
+			"name": "ルミカ129098",
+			"user_page": "/html/mypage/",
+			"age": 26,
+			"time": "10分前",
+			"text": "季節感のツボが合いません。コンビ結成を考えているのですが本当にこのまま吉本でデビューしても大丈夫なのか不安で...",
+			"comment_count": 0,
+			"iine_count": 2,
+			"iine_api_url": "/api/fav/iine/1/12345678901/",
+			"iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+			"is_iine_talk": false,
+			"talk_url": "/html/talk/detail/"
+		}
+	],
+	"more_url": "/html/json/api-fav-default.json",
+	"redirect_url": "NULL",
+	"talk_add_url": "/html/talk/add/"
+}

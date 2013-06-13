@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>GIRL’S TALK お問い合わせ</title>
+  <meta name="description" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css">
+  <link rel="stylesheet" href="/files/css/katoken.css">
+  <link rel="stylesheet" href="/files/css/pullToRefresh.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="bar-title" id="header">
+        <a href="#" class="button back">戻る</a>
+        <h1 class="title elps">お問い合わせ</h1>
+      </div>
+    </header>
+
+    <div class="main entrance user-action">
+
+      <div class="box-prof">
+        <h2>お名前</h2>
+        <div class="section">
+          <textarea rows="1" placeholder="例)原礼"></textarea>
+        </div>
+      </div>
+
+      <div class="box-prof">
+        <h2>メールアドレス</h2>
+        <div class="section">
+          <textarea rows="1" placeholder="例)haraheri@i.sofotbank.jp"></textarea>
+        </div>
+      </div>
+
+      <div class="box-prof">
+        <h2>メールアドレス(確認)</h2>
+        <div class="section">
+          <textarea rows="1" placeholder="例)haraheri@i.sofotbank.jp"></textarea>
+        </div>
+      </div>
+
+      <div class="box-prof">
+        <h2>お問い合せ内容</h2>
+        <div class="section">
+          <textarea rows="4" placeholder="本文(300文字)"></textarea>
+        </div>
+      </div>
+
+      <p><a href="#" class="btn">お問い合わせ</a></p>
+    </div><!-- /main -->
+
+    <nav class="nav-global" id="navGlobal">
+      <ul>
+        <li class="tab-fav"><a href="/html/fav/"><i></i>人気トーク</a></li>
+        <li class="tab-new"><a href="/html/category_new/"><i></i>新着トーク</a></li>
+        <li class="tab-hist"><a href="/html/hist/"><i></i>履歴</a></li>
+        <li class="tab-mypage active"><a href="/html/mypage/"><i></i>マイページ</a></li>
+      </ul>
+    </nav>
+    
+    <div id="gt-amb-footer"></div>
+    <script src="http://stat.sb-amebame.com/pub/sdk/js/all.js"></script>
+  </div><!-- /container -->
+  <!-- TODO: Delete LiveReload.js -->
+  <!--script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script-->
+
+  <script src="/files/js/jquery-1.7.2.min.js"></script>
+  <script src="/files/js/dust-full-0.3.0.min.js"></script>
+  <script src="/files/js/common.js"></script>
+  <script>
+  window.onload = function(){
+  init();
+  //getContents.fav();
+  };
+  </script>
+
+</body>
+</html>

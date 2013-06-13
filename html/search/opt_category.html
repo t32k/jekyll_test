@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>カテゴリ選択 | GIRL'S TALK</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css?20130128">
+  <style>
+  </style>
+</head>
+<body>
+  <div class="container bg-dark-a">
+    <header>
+      <div class="bar-title" id="header">
+        <a href="javascript:history.back();" class="back">キャンセル</a>
+        <h1 class="title elps">カテゴリ選択</h1>
+        <a href="#" class="right">完了</a>
+      </div>
+    </header>
+
+    <div class="main min-screen">
+
+    <p class="tx-sub tx-s r" style="padding:7px 10px">※複数選択可</p> 
+
+      <div class="hl-a deep-a has-ico-categories has-fake tx-l b bx-choice"><a href="#" class="c-love bk is-active"><i style="vertical-align:-5px"></i> 恋愛</a></div>
+      <div class="lv-a deep-a bx-choice">
+        <ul>
+          <li><a href="" class="bk tx-l b is-active" style="padding:15px 10px">恋愛総合</a></li>
+          <li><a href="" class="bk tx-l b is-active" style="padding:15px 10px">今日の報告</a></li>
+          <li><a href="" class="bk tx-l b is-active" style="padding:15px 10px">失恋</a></li>
+          <li><a href="" class="bk tx-l b is-active" style="padding:15px 10px">忘れられない恋</a></li>
+          <li><a href="" class="bk tx-l b is-active" style="padding:15px 10px">彼氏いない</a></li>
+        </ul>
+      </div>
+
+      <div class="hl-a deep-a has-ico-categories has-fake tx-l b bx-choice"><a href="#" class="c-nightlife bk"><i style="vertical-align:-5px"></i> ナイトライフ</a></div>
+      <div class="lv-a deep-a bx-choice">
+        <ul>
+          <li><a href="" class="bk tx-l b" style="padding:15px 10px">ナイトライフ総合</a></li>
+          <li><a href="" class="bk tx-l b" style="padding:15px 10px">今日の報告</a></li>
+          <li><a href="" class="bk tx-l b" style="padding:15px 10px">ワンナイトラブ</a></li>
+          <li><a href="" class="bk tx-l b" style="padding:15px 10px">セックスフレンド</a></li>
+        </ul>
+      </div>
+
+
+      <div class="hl-a deep-a has-ico-categories has-fake tx-l b bx-choice"><a href="#" class="c-mind bk"><i style="vertical-align:-5px"></i> ココロとカラダ</a></div>
+      <div class="lv-a deep-a bx-choice">
+        <ul>
+          <li><a href="" class="bk tx-l b" style="padding:15px 10px">悩み総合</a></li>
+          <li><a href="" class="bk tx-l b" style="padding:15px 10px">ココロのこと</a></li>
+          <li><a href="" class="bk tx-l b" style="padding:15px 10px">カラダのこと</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <nav class="nav-global" style="top:auto"><ul>
+      <li class="tab-new"><a href="/category_new"><i></i>トップページ</a></li>
+      <li class="tab-fav active"><a href="/fav"><i></i>ランキング</a></li>
+      <li class="tab-hist"><a href="/hist"><i></i>履歴</a></li>
+      <li class="tab-cnts"><a href="/contents"><i></i>占い・ゲーム</a></li>
+      <li class="tab-mypage"><a href="/mypage"><i></i>マイページ</a></li>
+    </ul></nav>
+  </div><!-- /container -->
+
+  <script src="/files/js/zepto.min.js"></script>
+  <script>
+    $('.bx-choice a').on('click', function(){
+        $(this).toggleClass('is-active');
+        return false;
+    });
+    $('.hl-a a').on('click', function(){
+        $(this).parent().next().find('a').each(function(){
+        $(this).toggleClass('is-active');
+      });
+    });
+  </script>
+<script>__reloadServerUrl="ws://localhost:8001";</script>
+<script src="//localhost:8001/__reload/client.js"></script>
+</body>
+</html>

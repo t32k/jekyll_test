@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>甘王の共感スクール GIRL'S TALK(ガールズトーク)女性限定完全匿名コミュニティ | Ameba(アメーバ)</title>
+<meta content="ドラマ人気コンテンツ「共感リクエスト」がGIRL'S TALKでパワーアップして楽しめるようになったよ♪
+今回はホストが身にまとった服を脱いだり着たり・・・" name="description">
+<meta content="ドラマ,共感スクール,共感リクエスト,恋愛,悩み,女性" name="keywords">
+<meta content="telephone=no" name="format-detection">
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+<link href="/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+<link href="/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+<link href="/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+<link href="/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed">
+<link href="/files/css/app.css" rel="stylesheet">
+<link href="/favicon.png" rel="shortcut icon">
+<link rel="stylesheet" href="http://stat.sb-amebame.com/pub/sdk/css/all-0.1.14.css">
+  <style>
+  .am-reauest-header-box {
+    width: 100%; height: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.3)), color-stop(4%,rgba(255,255,255,0)), color-stop(96%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.6))), url('/files/img/s/amaou/tv_hd_request_title.png');
+    background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 4%,rgba(0,0,0,0) 96%,rgba(0,0,0,0.6) 100%), url('/files/img/s/amaou/tv_hd_request_title.png');
+    background-image: linear-gradient(to bottom,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 4%,rgba(0,0,0,0) 96%,rgba(0,0,0,0.6) 100%), url('/files/img/s/amaou/tv_hd_request_title.png');
+    background-size: auto, 320px 200px;
+    background-repeat: repeat-x, no-repeat;
+    background-position: left, center top;
+    -webkit-box-shadow: rgba(0,0,0,0.6)0 1px 5px 0;
+    box-shadow: rgba(0,0,0,0.6)0 1px 5px 0;
+  }
+  .am-request-castbox li { margin:auto; }
+  .request-name {
+    display:inline-block;
+    float:right;
+    padding:5px 10px;
+    color:#FF4777;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,64,64,1)), color-stop(4%,rgba(51,51,51,1)), color-stop(96%,rgba(38,38,38,1)), color-stop(100%,rgba(26,26,26,1)));
+    background: -webkit-linear-gradient(top,  rgba(64,64,64,1) 0%,rgba(51,51,51,1) 4%,rgba(38,38,38,1) 96%,rgba(26,26,26,1) 100%);
+    background: linear-gradient(to bottom,  rgba(64,64,64,1) 0%,rgba(51,51,51,1) 4%,rgba(38,38,38,1) 96%,rgba(26,26,26,1) 100%);
+    font-weight:bold;
+    font-size:12px;
+    border-radius: 15px 0 0 15px;
+  }
+  .am-request-photolist li {
+    float:left;
+    height:46px;
+  }
+  .am-request-photolist li:not(:first-child) { margin-left:10px; }
+  .am-request-photo {
+    display: inline-block;
+    width: 45px; height: 45px;
+    background-size: 180px 45px;
+    -webkit-box-shadow: rgba(0,0,0,0.6)0 1px 5px 0;
+    box-shadow: rgba(0,0,0,0.6)0 1px 5px 0;
+  }
+  .am-request-photo.ryu    { background-image: url('/files/img/s/amaou/tv_request_cast01_02-05.jpg'); }
+  .am-request-photo.takuma { background-image: url('/files/img/s/amaou/tv_request_cast02_02-05.jpg'); }
+  .am-request-photo.haruto { background-image: url('/files/img/s/amaou/tv_request_cast03_02-05.jpg'); }
+  .am-request-photo.kento  { background-image: url('/files/img/s/amaou/tv_request_cast04_02-05.jpg'); }
+  .am-request-photo.aki    { background-image: url('/files/img/s/amaou/tv_request_cast05_02-05.jpg'); }
+  .am-request-photo.kaito  { background-image: url('/files/img/s/amaou/tv_request_cast06_02-05.jpg'); }
+  .am-request-photo.photo2 { background-position: 0 0; }
+  .am-request-photo.photo3 { background-position: -45px 0; }
+  .am-request-photo.photo4 { background-position: -90px 0; }
+  .am-request-photo.photo5 { background-position: -135px 0; }
+
+  .slideshow-wrapper {
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,.8);
+    text-align: center;
+  }
+  .slideshow-box {
+    display: inline-block;
+    position: relative;
+    top:0;
+    width:320px; height:240px;
+    overflow:hidden;
+  }
+  .slideshow-items {
+    display: inline-block;
+    float: left;
+    width:320px; height:240px;
+  }
+  .slideshow-items > div { background:transparent; }
+  .slideshow-items .more-loading { margin-top:110px; }
+  .slideshow-prev {
+    position: absolute;
+    top:82px; left:3px;
+    width:35px; height:80px;
+    text-align: left;
+  }
+  .slideshow-prev img { margin-top:54px; }
+  .slideshow-next {
+    position: absolute;
+    top:82px; right:3px;
+    width:35px; height:80px;
+    text-align: right;
+  }
+  .slideshow-next img {
+    margin-top:54px;
+  }
+  </style>
+</head>
+<body class="bg-dark">
+<header>
+  <div class="bar-title"><a href="javascript:history.back();" class="button back">戻る</a>
+    <h1 class="title elps"><img src="/files/img/logo.png" alt="Girl's Talk"></h1>
+  </div>
+</header>
+<div class="main bg-dark">
+  <div class="am-reauest-header-box mg-b10 bg-dark-a c"> 
+    <h2 class="ir">ホスト共感リクエスト①脱ぎ着♡編 ドラマ人気コンテンツ「共感リクエスト」がGIRL'S TALKでパワーアップして楽しめるようになったよ♪今回はホストが身にまとった服を脱いだり着たり・・・ 「男の裸、なめんなよ!!!!」</h2>
+  </div>
+  <p class="tx-sub c b">画像をタップしてホスト達の脱ぎ着を楽しんでね♡</p>
+  <ul class="am-request-castbox">
+    <li>
+      <div class="is-table" style="margin:auto; width:310px;padding:10px 0 10px 10px; "> <span class="is-cell" style="width:80px;padding-right:10px"> <a href="javascript:void(0)" data-slideshow-name="ryu" data-slideshow-id="1" data-slideshow-wrapper="#js-slideshow-01ryu-wrapper" class="ibk js-slideshow-thumbnail"> <img src="/files/img/s/amaou/tv_request_cast01_01.jpg" alt=""> </a></span> <span class="is-cell">
+        <div class="clearfix" style="padding-bottom:8px"> <span> <span class="tx-lm b">安藤龍</span> <span class="tx-m">(25)</span> </span> <span class="request-name">アポロ</span> </div>
+        <ul class="am-request-photolist clearfix">
+          <li><a href="javascript:void(0)" data-slideshow-name="ryu" data-slideshow-id="2" data-slideshow-wrapper="#js-slideshow-01ryu-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo ryu photo2"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="ryu" data-slideshow-id="3" data-slideshow-wrapper="#js-slideshow-01ryu-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo ryu photo3"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="ryu" data-slideshow-id="4" data-slideshow-wrapper="#js-slideshow-01ryu-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo ryu photo4"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="ryu" data-slideshow-id="5" data-slideshow-wrapper="#js-slideshow-01ryu-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo ryu photo5"></span></a></li>
+        </ul>
+        </span> </div>
+      <hr class="rule deep mgn">
+    </li>
+    <li>
+      <div class="is-table" style="margin:auto; width:310px;padding:10px 0 10px 10px; "> <span class="is-cell" style="width:80px;padding-right:10px"> <a href="javascript:void(0)" data-slideshow-name="takuma" data-slideshow-id="1" data-slideshow-wrapper="#js-slideshow-02takuma-wrapper" class="ibk js-slideshow-thumbnail"> <img src="/files/img/s/amaou/tv_request_cast02_01.jpg" alt=""> </a></span> <span class="is-cell">
+        <div class="clearfix" style="padding-bottom:8px"> <span> <span class="tx-lm b">伊吹拓磨</span> <span class="tx-m">(20)</span> </span> <span class="request-name">club rose</span> </div>
+        <ul class="am-request-photolist clearfix">
+          <li><a href="javascript:void(0)" data-slideshow-name="takuma" data-slideshow-id="2" data-slideshow-wrapper="#js-slideshow-02takuma-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo takuma photo2"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="takuma" data-slideshow-id="3" data-slideshow-wrapper="#js-slideshow-02takuma-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo takuma photo3"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="takuma" data-slideshow-id="4" data-slideshow-wrapper="#js-slideshow-02takuma-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo takuma photo4"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="takuma" data-slideshow-id="5" data-slideshow-wrapper="#js-slideshow-02takuma-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo takuma photo5"></span></a></li>
+        </ul>
+        </span> </div>
+      <hr class="rule deep mgn">
+    </li>
+    <li>
+      <div class="is-table" style="margin:auto; width:310px;padding:10px 0 10px 10px; "> <span class="is-cell" style="width:80px;padding-right:10px"> <a href="javascript:void(0)" data-slideshow-name="haruto" data-slideshow-id="1" data-slideshow-wrapper="#js-slideshow-03haruto-wrapper" class="ibk js-slideshow-thumbnail"> <img src="/files/img/s/amaou/tv_request_cast03_01.jpg" alt=""> </a></span> <span class="is-cell">
+        <div class="clearfix" style="padding-bottom:8px"> <span> <span class="tx-lm b">桐生春人</span> <span class="tx-m">(24)</span> </span> <span class="request-name">club MAX</span> </div>
+        <ul class="am-request-photolist clearfix">
+          <li><a href="javascript:void(0)" data-slideshow-name="haruto" data-slideshow-id="2" data-slideshow-wrapper="#js-slideshow-03haruto-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo haruto photo2"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="haruto" data-slideshow-id="3" data-slideshow-wrapper="#js-slideshow-03haruto-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo haruto photo3"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="haruto" data-slideshow-id="4" data-slideshow-wrapper="#js-slideshow-03haruto-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo haruto photo4"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="haruto" data-slideshow-id="5" data-slideshow-wrapper="#js-slideshow-03haruto-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo haruto photo5"></span></a></li>
+        </ul>
+        </span> </div>
+      <hr class="rule deep mgn">
+    </li>
+    <li>
+      <div class="is-table" style="margin:auto; width:310px;padding:10px 0 10px 10px; "> <span class="is-cell" style="width:80px;padding-right:10px"> <a href="javascript:void(0)" data-slideshow-name="kento" data-slideshow-id="1" data-slideshow-wrapper="#js-slideshow-04kento-wrapper" class="ibk js-slideshow-thumbnail"> <img src="/files/img/s/amaou/tv_request_cast04_01.jpg" alt=""> </a></span> <span class="is-cell">
+        <div class="clearfix" style="padding-bottom:8px"> <span> <span class="tx-lm b">九條剣斗</span> <span class="tx-m">(23)</span> </span> <span class="request-name">club パラダイス</span> </div>
+        <ul class="am-request-photolist clearfix">
+          <li><a href="javascript:void(0)" data-slideshow-name="kento" data-slideshow-id="2" data-slideshow-wrapper="#js-slideshow-04kento-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo kento photo2"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="kento" data-slideshow-id="3" data-slideshow-wrapper="#js-slideshow-04kento-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo kento photo3"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="kento" data-slideshow-id="4" data-slideshow-wrapper="#js-slideshow-04kento-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo kento photo4"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="kento" data-slideshow-id="5" data-slideshow-wrapper="#js-slideshow-04kento-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo kento photo5"></span></a></li>
+        </ul>
+        </span> </div>
+      <hr class="rule deep mgn">
+    </li>
+    <li>
+      <div class="is-table" style="margin:auto; width:310px;padding:10px 0 10px 10px; "> <span class="is-cell" style="width:80px;padding-right:10px"> <a href="javascript:void(0)" data-slideshow-name="aki" data-slideshow-id="1" data-slideshow-wrapper="#js-slideshow-05aki-wrapper" class="ibk js-slideshow-thumbnail"> <img src="/files/img/s/amaou/tv_request_cast05_01.jpg" alt=""> </a></span> <span class="is-cell">
+        <div class="clearfix" style="padding-bottom:8px"> <span> <span class="tx-lm b">皇山明希</span> <span class="tx-m">(23)</span> </span> <span class="request-name">club ルビー</span> </div>
+        <ul class="am-request-photolist clearfix">
+          <li><a href="javascript:void(0)" data-slideshow-name="aki" data-slideshow-id="2" data-slideshow-wrapper="#js-slideshow-05aki-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo aki photo2"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="aki" data-slideshow-id="3" data-slideshow-wrapper="#js-slideshow-05aki-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo aki photo3"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="aki" data-slideshow-id="4" data-slideshow-wrapper="#js-slideshow-05aki-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo aki photo4"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="aki" data-slideshow-id="5" data-slideshow-wrapper="#js-slideshow-05aki-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo aki photo5"></span></a></li>
+        </ul>
+        </span> </div>
+      <hr class="rule deep mgn">
+    </li>
+    <li>
+      <div class="is-table" style="margin:auto; width:310px;padding:10px 0 10px 10px; "> <span class="is-cell" style="width:80px;padding-right:10px"> <a href="javascript:void(0)" data-slideshow-name="kaito" data-slideshow-id="1" data-slideshow-wrapper="#js-slideshow-06kaito-wrapper" class="ibk js-slideshow-thumbnail"> <img src="/files/img/s/amaou/tv_request_cast06_01.jpg" alt=""> </a></span> <span class="is-cell">
+        <div class="clearfix" style="padding-bottom:8px"> <span> <span class="tx-lm b">瀬名海斗</span> <span class="tx-m">(23)</span> </span> <span class="request-name">PARADOOR</span> </div>
+        <ul class="am-request-photolist clearfix">
+          <li><a href="javascript:void(0)" data-slideshow-name="kaito" data-slideshow-id="2" data-slideshow-wrapper="#js-slideshow-06kaito-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo kaito photo2"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="kaito" data-slideshow-id="3" data-slideshow-wrapper="#js-slideshow-06kaito-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo kaito photo3"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="kaito" data-slideshow-id="4" data-slideshow-wrapper="#js-slideshow-06kaito-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo kaito photo4"></span></a></li>
+          <li><a href="javascript:void(0)" data-slideshow-name="kaito" data-slideshow-id="5" data-slideshow-wrapper="#js-slideshow-06kaito-wrapper" class="ibk js-slideshow-thumbnail"> <span class="am-request-photo kaito photo5"></span></a></li>
+        </ul>
+        </span> </div>
+      <hr class="rule deep mgn">
+    </li>
+  </ul>
+  <p class="mg-tb10 c"> <a href="/s/tv_amaou"> <img src="/files/img/s/amaou/tv_h2_school.jpg" alt="甘王の共感スクールとは？"></a> </p>
+  <p class="mg-b10 c"> <a href="/s/tv_amaou/story"> <img src="/files/img/s/amaou/tv_amaou_school.png" alt="甘王の居残り特別授業"></a> </p>
+  <hr class="rule deep mgn">
+  <a href="/login/auth" class="btn primary">ガールズトークをはじめる</a> <a href="/category_new" class="btn secondary">のぞいてみる</a>
+  <hr class="rule deep">
+</div>
+<!-- /main -->
+<nav class="nav-global" id="navGlobal">
+  <ul>
+    <li class="tab-new"><a href="/category_new"><i></i>トップページ</a></li>
+    <li class="tab-fav"><a href="/fav"><i></i>ランキング</a></li>
+    <li class="tab-hist"><a href="/hist"><i></i>履歴</a></li>
+    <li class="tab-cnts"><a href="/contents"><i></i>占い・ゲーム</a></li>
+    <li class="tab-mypage"><a href="/mypage"><i></i>マイページ</a></li>
+  </ul>
+</nav>
+</body>
+</html>

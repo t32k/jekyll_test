@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+  <meta charset="utf-8">
+  <title>アンケート | GIRL'S TALK</title>
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css">
+  <style>
+  .box-qa {
+	  margin: 10px 10px 20px;
+	  border-radius: 5px;
+	  background: #262626;
+	  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 5px 0;
+	  box-shadow: rgba(0, 0, 0, 0.6) 0 1px 5px 0;
+  }
+  .box-qa .headline i {
+	  position: absolute;
+	  top: -25px; left: -15px;
+	  width: 46px; height: 46px;
+	  background: url(/files/img/ico_q.png) no-repeat;
+	  background-size: 45px 45px;
+  }
+  .box-qa .headline i span {
+	  position: absolute;
+	  top: 23px; left: 30px;
+  }
+  .list-opt label {
+	  border-radius: 5px;
+	  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efefef), color-stop(30%, #dfdfdf), color-stop(100%, #b4b4b4));
+	  background: -webkit-linear-gradient(top, #efefef 0%, #dfdfdf 30%, #b4b4b4 100%);
+	  background: linear-gradient(to bottom, #efefef 0%, #dfdfdf 30%, #b4b4b4 100%);
+	  color: #666;
+	  text-shadow: 0 1px 0 #fff;
+	  -webkit-box-shadow: rgba(0,0,0,.6)0 1px 5px 0;
+	  box-shadow: rgba(0,0,0,.6)0 1px 5px 0;
+  }
+  .list-opt input:checked~label, .list-opt label.active {
+	  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bf00a0), color-stop(25%, #c206a3), color-stop(48%, #c816ab), color-stop(72%, #d330b9), color-stop(100%, #e55bce));
+	  background: -webkit-linear-gradient(top, #bf00a0 0%, #c206a3 25%, #c816ab 48%, #d330b9 72%, #e55bce 100%);
+	  background: linear-gradient(to bottom, #bf00a0 0%, #c206a3 25%, #c816ab 48%, #d330b9 72%, #e55bce 100%);
+	  color: #fff;
+	  text-shadow: 0 -1px 0 #a60089;
+  }
+  .list-opt em {
+	  display: inline-block;
+	  min-width: 9px;
+	  line-height: 17px;
+	  border: 1px #fff solid;
+	  border-radius: 10px;
+	  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff668e), color-stop(74%, #ff4676), color-stop(100%, #ff3469));
+	  background: -webkit-linear-gradient(top, #ff668e 0%, #ff4676 74%, #ff3469 100%);
+	  background: linear-gradient(to bottom, #ff668e 0%, #ff4676 74%, #ff3469 100%);
+	  text-align: center;
+	  vertical-align: 1px;
+	  text-shadow: none;
+	  -webkit-box-shadow: #1a1a1a 0 -1px 0 0;
+	  box-shadow: #1a1a1a 0 -1px 0 0;
+  }
+  .list-opt input { display: none; }
+  .btn {
+	  width: 200px;
+	  border: 1px #000 solid;
+	  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333), color-stop(100%, #010101));
+	  background: -webkit-linear-gradient(top, #333 0%, #010101 100%);
+	  background: linear-gradient(to bottom, #333 0%, #010101 100%);
+	  text-shadow: none;
+  }
+  .disabled {
+	  -webkit-tap-highlight-color: rgba(0,0,0,0);
+	  color: rgba(255,255,255,.4)!important;
+  }
+  .list-opt input:checked~label:after, .list-opt label.active:after {
+	  display: block;
+	  content: "";
+	  position: absolute;
+	  top: -5px; right: 5px;
+	  width: 45px; height: 45px;
+	  background: url(/files/img/ico_check.png) no-repeat;
+	  background-size: 45px 45px;
+  }
+	</style>
+  </head>
+
+  <body>
+<div class="container bg-dark-b">
+    <header>
+    <div class="bar-title" id="header"> <a href="javascript:history.back();" class="button back">戻る</a>
+        <h1 class="title elps">アンケート</h1>
+      </div>
+    <div class="ticker"><!--<p><a>投稿したトークがお気に入り登録されました</a></p>--></div>
+  </header>
+    <div class="main" style="padding-top:10px">
+    <form action="http://192.168.56.101:8080/enquete/answer/16" method="post" accept-charset="utf-8" name="form1">
+        <input type="hidden" name="token" value="1365154003">
+        <div class="box-qa pd-10 bg-dark-a">
+        <p class="headline ref tx-l b" style="padding-left:40px"> <i><span class="b tx-sub">1</span></i> 身体の相性が恋人・男性と合わないために体だけを求めて浮気する女性？ </p>
+        <ul class="list-opt" style="margin:15px 0">
+            <li>
+            <input type="radio" name="selection[166]" value="1" id="q166-1">
+            <label for="q166-1" onclick="" class="ref mg-b10 bk pd-10 tx-l b"><em class="tx-fff b tx-m" style="display:inline-block;margin: 0 1em 0 10px;padding: 0 5px 1px">a</em>共感できる</label>
+          </li>
+            <li>
+            <input type="radio" name="selection[166]" value="2" id="q166-2">
+            <label for="q166-2" onclick="" class="ref mg-b10 bk pd-10 tx-l b"><em class="tx-fff b tx-m" style="display:inline-block;margin: 0 1em 0 10px;padding: 0 5px 1px">b</em>共感できない</label>
+          </li>
+          </ul>
+      </div>
+        <!-- /.box-qa -->
+        <div class="box-qa pd-10 bg-dark-a">
+        <p class="headline ref tx-l b" style="padding-left:40px"> <i><span class="b tx-sub">2</span></i> 自分の過去の恋愛を恋人・旦那に全て話してしまう女性？ </p>
+        <ul class="list-opt" style="margin:15px 0">
+            <li>
+            <input type="radio" name="selection[167]" value="1" id="q167-1">
+            <label for="q167-1" onclick="" class="ref mg-b10 bk pd-10 tx-l b"><em class="tx-fff b tx-m" style="display:inline-block;margin: 0 1em 0 10px;padding: 0 5px 1px">1</em>共感できる</label>
+          </li>
+            <li>
+            <input type="radio" name="selection[167]" value="2" id="q167-2">
+            <label for="q167-2" onclick="" class="ref mg-b10 bk pd-10 tx-l b"><em class="tx-fff b tx-m" style="display:inline-block;margin: 0 1em 0 10px;padding: 0 5px 1px">2</em>共感できない</label>
+          </li>
+          </ul>
+      </div>
+        <!-- /.box-qa -->
+        <div class="box-qa pd-10 bg-dark-a">
+        <p class="headline ref tx-l b" style="padding-left:40px"> <i><span class="b tx-sub">3</span></i> 知らない番号から電話があったら出てしまう女性？ </p>
+        <ul class="list-opt" style="margin:15px 0">
+            <li>
+            <input type="radio" name="selection[168]" value="1" id="q168-1">
+            <label for="q168-1" onclick="" class="ref mg-b10 bk pd-10 tx-l b"><em class="tx-fff b tx-m" style="display:inline-block;margin: 0 1em 0 10px;padding: 0 5px 1px">i</em>共感できる</label>
+          </li>
+            <li>
+            <input type="radio" name="selection[168]" value="2" id="q168-2">
+            <label for="q168-2" onclick="" class="ref mg-b10 bk pd-10 tx-l b"><em class="tx-fff b tx-m" style="display:inline-block;margin: 0 1em 0 10px;padding: 0 5px 1px">l</em>共感できない</label>
+          </li>
+          </ul>
+      </div>
+        <!-- /.box-qa -->
+        
+
+        <p><button type="submit" class="btn" style="margin:10px auto">解答する</button></p>
+        <p><button type="submit" class="btn disabled" style="margin:10px auto">解答する</button></p>
+      </form>
+    <ul class="lv-b deep mg-10">
+        <li class="hl tx-l b c tx-fff">バックナンバー</li>
+        <li><a href="/enquete/result/15" class="has-fake bk pd-10" style="padding-right:30px">
+          <p class="tx-m tx-fff b mg-b5">『男のさしすせそ』アンケート</p>
+          <p class="clearfix tx-s n"><span class="tx-sub n">参加者：334人</span><span class="tx-weak fr">2013/03/07</span></p>
+          </a></li>
+        <li><a href="/enquete/result/13" class="has-fake bk pd-10" style="padding-right:30px">
+          <p class="tx-m tx-fff b mg-b5">『キスフレ』アンケート</p>
+          <p class="clearfix tx-s n"><span class="tx-sub n">参加者：619人</span><span class="tx-weak fr">2013/02/21</span></p>
+          </a></li>
+        <li><a href="/enquete/result/11" class="has-fake bk pd-10" style="padding-right:30px">
+          <p class="tx-m tx-fff b mg-b5">第10回アンケート</p>
+          <p class="clearfix tx-s n"><span class="tx-sub n">参加者：1227人</span><span class="tx-weak fr">2013/02/05</span></p>
+          </a></li>
+        <li class="r"><a href="/enquete/back_number" class="has-fake bk pd-10 tx-weak n" style="padding-right:25px">バックナンバー一覧</a></li>
+      </ul>
+    <ul class="lv-a deep mg-10">
+        <li class="r"><a href="/category_new" class="has-fake bk pd-10 tx-weak" style="padding-right:25px">トップページへ</a></li>
+      </ul>
+  </div>
+    <!-- /main -->
+    
+    <nav class="nav-global" id="navGlobal">
+    <ul>
+        <li class="tab-new"><a href="/html/category_new/"><i></i>新着トーク</a></li>
+        <li class="tab-fav"><a href="/html/fav/"><i></i>人気トーク</a></li>
+        <li class="tab-hist"><a href="/html/hist/"><i></i>履歴</a></li>
+        <li class="tab-mypage active"><a href="/html/mypage/"><i></i>マイページ</a></li>
+      </ul>
+  </nav>
+    <div id="gt-amb-footer"></div>
+  </div>
+<!-- /container -->
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+    "talk_list": [
+        {
+            "body": "彼氏との笑いのツボが合いません。コンビ結成を考えているのですが本当にこのまま吉本で...",
+            "comment_count": 0,
+            "like_count": 0,
+            "iine_api_url": "/api/fav/iine/1/12345678901/",
+            "iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+            "is_iine_talk": "FALSE",
+            "talk_del_url": "/html/",
+            "user_name": "ルミカ129098",
+            "user_page": "/html/user/",
+            "age": 26,
+            "talk_time": "たった今",
+            "talk_url": "/html/talk/detail/"
+        },
+        {
+            "body": "怒ると黙り込むタイプの同棲中の彼とケンカ中なのですが、困っています。原因は多分、部屋の掃除...",
+            "comment_count": 1,
+            "like_count": 1,
+            "iine_api_url": "/api/fav/iine/1/12345678901/",
+            "iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+            "is_iine_talk": "TRUE",
+            "talk_del_url": "/html/",
+            "user_name": "ルミカ129098",
+            "user_page": "/html/user/",
+            "age": 30,
+            "talk_time": "5時間前",
+            "talk_url": "/html/talk/detail/"
+        },
+        {
+            "body": "季節の変わり目はいつも着る物に悩んでしまいます。車通勤なのでキチッとした洋服は必要なくて、カジ...",
+            "comment_count": 9999,
+            "like_count": 9999,
+            "iine_api_url": "/api/fav/iine/1/12345678901/",
+            "iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+            "is_iine_talk": "FALSE",
+            "talk_del_url": "/html/",
+            "user_name": "マリコ12121",
+            "user_page": "/html/user/",
+            "age": 24,
+            "talk_time": "5時間前",
+            "talk_url": "/html/talk/detail/"
+        }
+    ],
+    "more_url": "/html/json/api-mypage-talk.json"
+}

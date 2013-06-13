@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>GIRL’S TALKS 【女性】サービス内プロフィール入力ページ</title>
+  <meta name="description" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="bar-title">
+        <h1 class="title elps"><img src="/files/img/logo.png" alt="Girl's Talk"></h1>
+      </div>
+    </header>
+
+    <form action="" method="post" accept-charset="utf-8" name="form1">
+
+    <input type="hidden" name="userNameID" value="10496" />
+    <input type="hidden" name="number" value="10002" />
+    <input type="hidden" name="userName" value="マーリン" />
+    <input type="hidden" name="csrf_test_name" value="" />
+
+    <div class="main entrance">
+      <div class="box-prof">
+        <h2>あなたのトークネーム</h2>
+        <div class="section">
+          <div class="box-name clearfix"><p class="name" id="talkName">マーリン10002</p><button type="button" id="requestNameBtn">変更する</button></div>
+          <p class="note"><span class="asterisk">※</span>初期設定後、プロフィール編集ページから変更が可能です。</p>
+          <p class="note"><span class="asterisk">※</span>GIRL’S TALK専用のトークネームは自動取得されます。</p>
+        </div>
+      </div>
+
+    <div class="box-prof">
+      <h2>あなたの年齢</h2>
+      <div class="section">
+        <select class="half">
+          <option>年齢を選択</option>
+          <option value="20">20歳</option>
+          <option value="21">21歳</option>
+          <option value="22">22歳</option>
+          <option value="23">23歳</option>
+          <option value="24">24歳</option>
+          <option value="25">25歳</option>
+          <option value="26" selected>26歳</option>
+          <option value="27">27歳</option>
+          <option value="28">28歳</option>
+          <option value="29">29歳</option>
+          <option value="30">30歳</option>
+        </select>
+        <p class="note"><span class="asterisk">※</span>初期設定後、プロフィール編集ページから変更が可能です。</p>
+      </div>
+    </div>
+    
+    <div class="box-prof">
+      <h2>プロフィール設定</h2>
+      <div class="section">
+        <h3>■恋愛ステイタス（任意）</h3>
+
+        <select>
+          <option>恋愛ステータスを選択</option>
+        </select>
+
+        <h3>■しあわせ度（任意）</h3>
+
+        <select>
+          <option>しあわせ度を選択</option>
+        </select>
+
+        <h3>■おしごと（任意）</h3>
+
+        <select>
+          <option>おしごとを選択</option>
+        </select>
+
+        <p class="or">または</p>
+        <input type="text" placeholder="自由記入(8文字)" maxlength="8">
+        <p class="note"><span class="asterisk">※</span>初期設定後、プロフィール編集ページから変更が可能です。</p>
+      </div>
+    </div>
+
+    <p>
+      <a href="#" class="btn-enter">ご利用上の注意事項に同意して決定</a>
+    </p>
+    <div class="lead">
+      <p class="note except"><span class="asterisk">※</span><a href="/html/mypage/kiyaku/">ご利用上の注意事項</a> / <a href="http://help.amebame.com/ameba-rules/765/" target="_blank">利用規約</a></p>
+    </div>
+  </div><!-- /main -->
+  </form>
+
+  </div><!-- /container -->
+
+  <script src="/files/js/jquery-1.7.2.min.js"></script>
+  <script src="/files/js/girlstalk.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    GST.page.login();
+  });
+  </script>
+
+</body>
+</html>

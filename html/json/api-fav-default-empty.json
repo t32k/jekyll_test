@@ -1,0 +1,43 @@
+{
+	"cat": [
+		{
+			"cat_name": "すべて",
+			"cat_title_en": "all",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "恋愛",
+			"cat_title_en": "love",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "お仕事",
+			"cat_title_en": "work",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "家庭",
+			"cat_title_en": "home",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "心と体",
+			"cat_title_en": "mind",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "ナイトライフ",
+			"cat_title_en": "nightlife",
+			"api_url": "/html/json/api-fav-all.json" 
+		},
+		{
+			"cat_name": "雑談",
+			"cat_title_en": "chat",
+			"api_url": "/html/json/api-fav-all.json" 
+		}
+	],
+	"talk": [],
+	"more_url": "",
+	"redirect_url": "NULL",
+	"talk_add_url": "/html/talk/add/"
+}

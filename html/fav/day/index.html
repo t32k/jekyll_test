@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>恋愛ランキング｜GIRL'S TALK</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="/files/css/app.css?1363833777">
+<link rel="stylesheet" href="http://stat.amebame.com/pub/sdk/css/all-0.1.14.css">
+</head>
+<body>
+<div class="amb-header-container">
+  <header id="amb_header" class="amb_default amb">
+  <p id="amb_ci">
+    <a class="amb_anchor amb_ci_text" style="cursor: pointer; -webkit-user-select: none;" href="http://link.ameba.jp/155220/frm_id=c.amm-header_l.dr-home_r.am-mini-7979981">ホームへ</a>
+  </p>
+  <button id="amb_noti" class="amb_button" style="cursor: pointer; -webkit-user-select: none;"><span class="amb_header_noti_counter" style="visibility: visible;">1</span></button></header>
+</div>
+<div class="container">
+  <header>
+  <div class="bar-title">
+    <a href="javascript:history.back();" class="button back">戻る</a>
+    <h1 class="title elps"><img src="/files/img/logo.png" alt="Girl's Talk"></h1>
+    <a href="javascript:void(0);" class="right js-menu">メニュー</a>
+  </div>
+  <nav class="nav-menu tx-s b" style="overflow: hidden; z-index: 1000; top: 78px;">
+  <div style="max-width:320px; margin:auto; padding:0 10px;margin-top:-100%">
+    <div class="bx-search">
+      <form action="/search" method="get" name="search_menu">
+        <div style="padding:10px 0 5px">
+          <fieldset class="ref">
+            <input type="text" value="" class="bx-srch input-srch tx-l js-menu-input" placeholder="気になるワードを入力してね♪"><input type="submit" value="検索" class="btn-srch input-srch tx-m tx-fff b js-menu-search">
+          </fieldset>
+        </div>
+      </form>
+    </div>
+    <!-- /.bx-search -->
+    <ul class="clearfix c">
+      <li><a href="/category_new" class="item-new bk">
+      <div class="vbx">
+        <div class="hbx">
+          <i></i>カテゴリ一覧
+        </div>
+      </div>
+      </a></li>
+      <li><a href="/fav" class="item-rank bk">
+      <div class="vbx">
+        <div class="hbx">
+          <i></i>人気ランキング
+        </div>
+      </div>
+      </a></li>
+      <li><a href="/contents" class="item-cnts bk">
+      <div class="vbx">
+        <div class="hbx cancel">
+          <i></i>占い・ゲーム
+        </div>
+      </div>
+      </a></li>
+      <li><a href="/mypage/conf" class="item-set bk">
+      <div class="vbx">
+        <div class="hbx">
+          <i></i>設定
+        </div>
+      </div>
+      </a></li>
+      <li><a href="/search" class="item-search bk">
+      <div class="vbx">
+        <div class="hbx">
+          <i></i>検索
+        </div>
+      </div>
+      </a></li>
+      <li>
+      <div class="vbx">
+        <div class="hbx cancel">
+          <div style="height:63px">
+          </div>
+        </div>
+      </div>
+      </li>
+    </ul>
+    <div class="r" style="padding:8px 0">
+      <a href="#" class="bx-close"><i></i>とじる</a>
+    </div>
+  </div>
+  </nav>
+  <div class="ticker">
+    <p style="width: 2252px; visibility: visible; padding-left: 320px; -webkit-animation: 30s;">
+      <a href="/mypage/news">★☆ナイトライフ閲覧制限化のお知らせ☆★</a><a>GIRL'S TALKへようこそ！ ★☆iPhoneアプリを今すぐダウンロード☆★ ブラウザでご利用の方はホーム画面に追加、またはブックマークしてね★ ★恋愛、ナイトライフ、お仕事…今日はどのカテゴリでうちあけちゃう？ 共感してくれたあの子にお礼しにいこう♪</a>
+    </p>
+  </div>
+  </header>
+  <div class="main">
+    <p class="pd-10 r">
+      <a href="/new/all/1001" class="bx-d pale tx-main tx-m b">このカテゴリの新着トーク <i class="s-arrows circlepink-b-r"></i></a>
+    </p>
+    <div class="hl-c pale has-fake js-ranking-title" style="padding:12px 10px">
+      <p class="b tx-std" style="font-size:17px">
+        恋愛ランキング
+      </p>
+    </div>
+    <div id="threads_wrapper">
+      <!-- threads -->
+      <ul class="threads" id="template" style="min-height:100px">
+        <!-- スレッド -->
+        <script id="thread" type="text/html"> {#talk} <li class="thread {?p_nickname}{:else}no{/p_nickname} newNode" data-talk-url="{talk_url}"> <div class="talk"> {?talk_del_url}<div class="box-btn-del"><button class="btn-del" data-del-api="{talk_del_url}" data-del-parents="2">削除</button></div>{:else}{/talk_del_url} <p class="line-text rank"><a href="{talk_url}" class="tx-std"> <em><img src="/files/img/icons/crown_{rank_icon_num}.png" alt=""><br>{rank_num}</em>{text|s}</a> </p> <p class="line-cate"><a href="{category_new_url}">{cat_name}</a></p> <p class="line-info"><a href="{user_page}" class="name">{nickname}（{age}歳）<span class="id">ID:{id_str}</span></a><span class="timestamp">{time}</span></p> <p class="line-action clearfix"> <button class="btn-comment" data-talk-id="{talk_id}">コメント<em>{comment_count}</em></button> <button class="btn-like" data-iine-api="{iine_api_url}" data-iine-cancel-api="{iine_cancel_api_url}" data-is-iine="{is_iine_talk}" data-iine-type="talk">共感！<em>{iine_count}</em></button> </p> </div> {?p_nickname} <div class="comment"><span class="triangle"></span> <p class="line-text">{p_text|s}</p> <p class="line-info"> <a href="{p_user_page}" class="name">{p_nickname}（{p_age}歳）<span class="id">ID:{p_id_str}</span></a> <span class="timestamp">{p_time}</span> </p> </div> {:else}{/p_nickname} </li> {/talk} </script>
+        <!--表示トークがない場合-->
+        <script id="empty" type="text/html"> <li class="thread"> <p class="empty">表示できるトークはありません</p> </li><!-- /thread --> </script>
+        <script id="error" type="text/html"> <li class="thread"> <p class="empty">読み込みに失敗しました<a href="javascript:void(0)" class="btn js-error" data-api="{error_data.api_url}">もう一度読み込む</a></p> </li><!-- /thread --> </script>
+        <!--もっとみる-->
+        <script id="more" type="text/html"> <li class="js-more"> <a href="javascript:void(0)" class="btn pale" style="margin:18px 10px" data-more-api="{more_url}">もっとみる</a> <hr class="rule" style="margin:0"> </li> </script>
+        <li class="thread" data-talk-url="/talk/detail/135172">
+        <div class="talk">
+          <p class="line-text rank">
+            <a href="/talk/detail/135172" class="tx-std"><em><img src="/files/img/icons/crown_1.png" alt=""><br>
+            1</em>旦那の不倫相手に慰謝料を請求すると言ったら、旦那に『お願いだからやめて。もう過去の事だし、相手はもう普通に生活し...</a>
+          </p>
+          <p class="line-cate">
+            <a href="/new/100110">(恋愛＞不倫)</a>
+          </p>
+          <p class="line-info">
+            <a href="/user/322065" class="name">ジェマ（25歳）<span class="id">ID:35a6A</span></a><span class="timestamp">10時間前</span>
+          </p>
+          <p class="line-action clearfix">
+            <button class="btn-comment" data-talk-id="135172">コメント<em>134</em></button><button class="btn-like " data-iine-api="/api/fav/iine/1/135172" data-iine-cancel-api="/api/fav/iine_cancel/1/135172" data-is-iine="FALSE" data-iine-type="talk">共感！<em>273</em></button>
+          </p>
+        </div>
+        <div class="comment">
+          <span class="triangle"></span>
+          <p class="line-text">
+            私も本当に自分でけりをつけられて良かったと思っています。手強かったのは主人かも(...
+          </p>
+          <p class="line-info">
+            <a href="/user/146857" class="name">エジェリー（38歳）<span class="id">ID:dHgDC</span></a><span class="timestamp">8分前</span>
+          </p>
+        </div>
+        </li>
+        <li class="thread" data-talk-url="/talk/detail/135196">
+        <div class="talk">
+          <p class="line-text rank">
+            <a href="/talk/detail/135196" class="tx-std"><em><img src="/files/img/icons/crown_2.png" alt=""><br>
+            2</em>私には付き合って2年の彼氏がいます。先日ご飯を食べていたとき、お互い携帯で自分たちの思い出の写真を見て懐かしんで...</a>
+          </p>
+          <p class="line-cate">
+            <a href="/new/200003">(恋愛＞マンネリ)</a>
+          </p>
+          <p class="line-info">
+            <a href="/user/320199" class="name">フルール（22歳）<span class="id">ID:DFjcy</span></a><span class="timestamp">9時間前</span>
+          </p>
+          <p class="line-action clearfix">
+            <button class="btn-comment" data-talk-id="135196">コメント<em>32</em></button><button class="btn-like " data-iine-api="/api/fav/iine/1/135196" data-iine-cancel-api="/api/fav/iine_cancel/1/135196" data-is-iine="FALSE" data-iine-type="talk">共感！<em>34</em></button>
+          </p>
+        </div>
+        <div class="comment">
+          <span class="triangle"></span>
+          <p class="line-text">
+            いつまでもとっておかれると未練でもあるのかと疑っちゃいますよね(&gt;_&lt;)私も同じ...
+          </p>
+          <p class="line-info">
+            <a href="/user/43769" class="name">ホノカ（27歳）<span class="id">ID:wllxo</span></a><span class="timestamp">5分前</span>
+          </p>
+        </div>
+        </li>
+        <li class="thread" data-talk-url="/talk/detail/135410">
+        <div class="talk">
+          <p class="line-text rank">
+            <a href="/talk/detail/135410" class="tx-std"><em><img src="/files/img/icons/crown_3.png" alt=""><br>
+            3</em>不倫する主婦ってさぁ、暇なの？暇だよねー？私はフルタイム正社員の兼業主婦だけど、そんな時間捻出出来ねーわ(´ε｀...</a>
+          </p>
+          <p class="line-cate">
+            <a href="/new/100110">(恋愛＞不倫)</a>
+          </p>
+          <p class="line-info">
+            <a href="/user/274721" class="name">クリステル（28歳）<span class="id">ID:4Qukt</span></a><span class="timestamp">2時間前</span>
+          </p>
+          <p class="line-action clearfix">
+            <button class="btn-comment" data-talk-id="135410">コメント<em>27</em></button><button class="btn-like " data-iine-api="/api/fav/iine/1/135410" data-iine-cancel-api="/api/fav/iine_cancel/1/135410" data-is-iine="FALSE" data-iine-type="talk">共感！<em>51</em></button>
+          </p>
+        </div>
+        <div class="comment">
+          <span class="triangle"></span>
+          <p class="line-text">
+            え！既婚で2週間に一度デートしてる男性が居るんじゃないの？（笑）プロフィールに自...
+          </p>
+          <p class="line-info">
+            <a href="/user/274721" class="name">クリステル（28歳）<span class="id">ID:4Qukt</span></a><span class="timestamp">1分前</span>
+          </p>
+        </div>
+        </li>
+        <li class="thread" data-talk-url="/talk/detail/135195">
+        <div class="talk">
+          <p class="line-text rank">
+            <a href="/talk/detail/135195" class="tx-std"><em><img src="/files/img/icons/crown_4.png" alt=""><br>
+            4</em>結構どうでもいい話です。笑はたちで彼氏14人目って多いんですかね？周りにそんな子居なくて…。まあ、大した話じゃな...</a>
+          </p>
+          <p class="line-cate">
+            <a href="/new/100116">(恋愛＞恋愛総合)</a>
+          </p>
+          <p class="line-info">
+            <a href="/user/272800" class="name">ニッキー（20歳）<span class="id">ID:1gcof</span></a><span class="timestamp">9時間前</span>
+          </p>
+          <p class="line-action clearfix">
+            <button class="btn-comment" data-talk-id="135195">コメント<em>35</em></button><button class="btn-like " data-iine-api="/api/fav/iine/1/135195" data-iine-cancel-api="/api/fav/iine_cancel/1/135195" data-is-iine="FALSE" data-iine-type="talk">共感！<em>6</em></button>
+          </p>
+        </div>
+        <div class="comment">
+          <span class="triangle"></span>
+          <p class="line-text">
+            そうなんですか！わたしもそのくらいです(*^^*)
+          </p>
+          <p class="line-info">
+            <a href="/user/161780" class="name">ルル（19歳）<span class="id">ID:uIpGQ</span></a><span class="timestamp">35分前</span>
+          </p>
+        </div>
+        </li>
+        <li class="thread" data-talk-url="/talk/detail/135373">
+        <div class="talk">
+          <p class="line-text rank">
+            <a href="/talk/detail/135373" class="tx-std"><em><img src="/files/img/icons/crown_4.png" alt=""><br>
+            5</em>いい女と言われた事あるみなさーん(´▽`)ﾉ性格の方でお願いします☆見た目かわいくなるのはわかりやすいし簡単なの...</a>
+          </p>
+          <p class="line-cate">
+            <a href="/new/100116">(恋愛＞恋愛総合)</a>
+          </p>
+          <p class="line-info">
+            <a href="/user/323997" class="name">ニーナ（27歳）<span class="id">ID:fVboG</span></a><span class="timestamp">3時間前</span>
+          </p>
+          <p class="line-action clearfix">
+            <button class="btn-comment" data-talk-id="135373">コメント<em>23</em></button><button class="btn-like " data-iine-api="/api/fav/iine/1/135373" data-iine-cancel-api="/api/fav/iine_cancel/1/135373" data-is-iine="FALSE" data-iine-type="talk">共感！<em>7</em></button>
+          </p>
+        </div>
+        <div class="comment">
+          <span class="triangle"></span>
+          <p class="line-text">
+            ありがとうとごめんねはちょっとした事にでも必ずきちんと言うようにしてます！あとう...
+          </p>
+          <p class="line-info">
+            <a href="/user/21467" class="name">マドカ（26歳）<span class="id">ID:qiwzj</span></a><span class="timestamp">0分前</span>
+          </p>
+        </div>
+        </li>
+        <li class="thread" data-talk-url="/talk/detail/135177">
+        <div class="talk">
+          <p class="line-text rank">
+            <a href="/talk/detail/135177" class="tx-std"><em><img src="/files/img/icons/crown_4.png" alt=""><br>
+            6</em>なんだろ？ないものねだり？十年専業主婦、まあ子育てにも積極的な旦那さんただ、結婚まえから年がら年中忙しく夜１２時...</a>
+          </p>
+          <p class="line-cate">
+            <a href="/new/100108">(恋愛＞離婚)</a>
+          </p>
+          <p class="line-info">
+            <a href="/user/326816" class="name">ジゼル（38歳）<span class="id">ID:g5cbt</span></a><span class="timestamp">10時間前</span>
+          </p>
+          <p class="line-action clearfix">
+            <button class="btn-comment" data-talk-id="135177">コメント<em>18</em></button><button class="btn-like " data-iine-api="/api/fav/iine/1/135177" data-iine-cancel-api="/api/fav/iine_cancel/1/135177" data-is-iine="FALSE" data-iine-type="talk">共感！<em>9</em></button>
+          </p>
+        </div>
+        <div class="comment">
+          <span class="triangle"></span>
+          <p class="line-text">
+            ママ、お疲れ様です！うちも休みの日以外は夕飯一緒なんて無理です。最近四歳の息子が...
+          </p>
+          <p class="line-info">
+            <a href="/user/261045" class="name">ジャスミン（39歳）<span class="id">ID:7zwfR</span></a><span class="timestamp">58分前</span>
+          </p>
+        </div>
+        </li>
+        <li class="thread" data-talk-url="/talk/detail/135268">
+        <div class="talk">
+          <p class="line-text rank">
+            <a href="/talk/detail/135268" class="tx-std"><em><img src="/files/img/icons/crown_4.png" alt=""><br>
+            7</em>八年付き合ってる旦那様に初恋は君だよって言われた♡</a>
+          </p>
+          <p class="line-cate">
+            <a href="/new/100117">(恋愛＞忘れられない恋)</a>
+          </p>
+          <p class="line-info">
+            <a href="/user/322436" class="name">ジジ（33歳）<span class="id">ID:2K6k2</span></a><span class="timestamp">6時間前</span>
+          </p>
+          <p class="line-action clearfix">
+            <button class="btn-comment" data-talk-id="135268">コメント<em>7</em></button><button class="btn-like " data-iine-api="/api/fav/iine/1/135268" data-iine-cancel-api="/api/fav/iine_cancel/1/135268" data-is-iine="FALSE" data-iine-type="talk">共感！<em>13</em></button>
+          </p>
+        </div>
+        <div class="comment">
+          <span class="triangle"></span>
+          <p class="line-text">
+            素敵〜(•ॢ◡-ॢ)-♡
+          </p>
+          <p class="line-info">
+            <a href="/user/230754" class="name">オルゾーラ（31歳）<span class="id">ID:gKjNB</span></a><span class="timestamp">53分前</span>
+          </p>
+        </div>
+        </li>
+        <li class="thread" data-talk-url="/talk/detail/135357">
+        <div class="talk">
+          <p class="line-text rank">
+            <a href="/talk/detail/135357" class="tx-std"><em><img src="/files/img/icons/crown_4.png" alt=""><br>
+            8</em>私は岐阜で名古屋の彼氏と遊ぼうとおもってるんですが！どうやってあって、遊ぼうかまよってます私、恥ずかしながら、電...</a>
+          </p>
+          <p class="line-cate">
+            <a href="/new/100116">(恋愛＞恋愛総合)</a>
+          </p>
+          <p class="line-info">
+            <a href="/user/226953" class="name">アネモーネ（22歳）<span class="id">ID:X8h76</span></a><span class="timestamp">3時間前</span>
+          </p>
+          <p class="line-action clearfix">
+            <button class="btn-comment" data-talk-id="135357">コメント<em>12</em></button><button class="btn-like " data-iine-api="/api/fav/iine/1/135357" data-iine-cancel-api="/api/fav/iine_cancel/1/135357" data-is-iine="FALSE" data-iine-type="talk">共感！<em>6</em></button>
+          </p>
+        </div>
+        <div class="comment">
+          <span class="triangle"></span>
+          <p class="line-text">
+            わたしも電車苦手でした(ｰｰ;)乗り物酔いするので、、土日でしたら、名古屋では土...
+          </p>
+          <p class="line-info">
+            <a href="/user/192172" class="name">ソニア（24歳）<span class="id">ID:Mh3UC</span></a><span class="timestamp">31分前</span>
+          </p>
+        </div>
+        </li>
+        <li class="thread" data-talk-url="/talk/detail/135294">
+        <div class="talk">
+          <p class="line-text rank">
+            <a href="/talk/detail/135294" class="tx-std"><em><img src="/files/img/icons/crown_4.png" alt=""><br>
+            9</em>たった今、遠距離の彼からメールが。今朝、電話で、来月逢えるまでにまだまだ先が長くて待ち遠しいね、って話してたんだ...</a>
+          </p>
+          <p class="line-cate">
+            <a href="/new/100210">(恋愛＞今日の報告)</a>
+          </p>
+          <p class="line-info">
+            <a href="/user/320585" class="name">クレア（40歳）<span class="id">ID:Gx7L6</span></a><span class="timestamp">5時間前</span>
+          </p>
+          <p class="line-action clearfix">
+            <button class="btn-comment" data-talk-id="135294">コメント<em>7</em></button><button class="btn-like " data-iine-api="/api/fav/iine/1/135294" data-iine-cancel-api="/api/fav/iine_cancel/1/135294" data-is-iine="FALSE" data-iine-type="talk">共感！<em>9</em></button>
+          </p>
+        </div>
+        <div class="comment">
+          <span class="triangle"></span>
+          <p class="line-text">
+            うれしいですよね(*´艸`*)彼がお休みとれますように！！
+          </p>
+          <p class="line-info">
+            <a href="/user/192172" class="name">ソニア（24歳）<span class="id">ID:Mh3UC</span></a><span class="timestamp">22分前</span>
+          </p>
+        </div>
+        </li>
+        <li class="thread" data-talk-url="/talk/detail/135310">
+        <div class="talk">
+          <p class="line-text rank">
+            <a href="/talk/detail/135310" class="tx-std"><em><img src="/files/img/icons/crown_4.png" alt=""><br>
+            10</em>理想のプロポーズのシチュエーションってありますか？？こういう場所でされたいとかこういうセリフ言って欲しいとかあと...</a>
+          </p>
+          <p class="line-cate">
+            <a href="/new/100107">(恋愛＞結婚)</a>
+          </p>
+          <p class="line-info">
+            <a href="/user/277436" class="name">ソニア（23歳）<span class="id">ID:GHzXr</span></a><span class="timestamp">5時間前</span>
+          </p>
+          <p class="line-action clearfix">
+            <button class="btn-comment" data-talk-id="135310">コメント<em>4</em></button><button class="btn-like " data-iine-api="/api/fav/iine/1/135310" data-iine-cancel-api="/api/fav/iine_cancel/1/135310" data-is-iine="FALSE" data-iine-type="talk">共感！<em>11</em></button>
+          </p>
+        </div>
+        <div class="comment">
+          <span class="triangle"></span>
+          <p class="line-text">
+            実体験私の大好きなディズニーに連れて行ってもらい、その日の旦那は乗り物よりかキャ...
+          </p>
+          <p class="line-info">
+            <a href="/user/273098" class="name">マリアンナ（28歳）<span class="id">ID:DsDio</span></a><span class="timestamp">1時間前</span>
+          </p>
+        </div>
+        </li>
+      </ul>
+      <!-- /threads -->
+      <div class="js-nav-pager-area">
+        <div class="bx-shadow-b" style="padding-bottom:10px">
+        <div class="nav-pager">
+          <ul class="pager-direct">
+            <li><a href="#" class="js-paging-btn active" style="">1</a></li>
+            <li><i class="js-paging-over abbr" style="display: none;">…</i></li>
+            <li><a href="#" class="js-paging-btn" style="">2</a></li>
+            <li><a href="#" class="js-paging-btn" style="">3</a></li>
+            <li><a href="#" class="js-paging-btn" style="">4</a></li>
+            <li><a href="#" class="js-paging-btn" style="display: none;">5</a></li>
+            <li><a href="#" class="js-paging-btn" style="display: none;">6</a></li>
+            <li><a href="#" class="js-paging-btn" style="display: none;">7</a></li>
+            <li><a href="#" class="js-paging-btn" style="display: none;">8</a></li>
+            <li><a href="#" class="js-paging-btn" style="display: none;">9</a></li>
+            <li><i class="js-paging-over abbr" style="display: inline;">…</i></li>
+            <li><a href="#" class="js-paging-btn" style="">10</a></li>
+          </ul>
+          <ul class="pager-steps">
+            <li class="js-paging-first"><a href="javascript:void(0);" class="js-paging-first back disabled"><i class="ir">&lt;&lt;</i></a></li>
+            <li class="js-paging-prev"><a href="javascript:void(0);" class="disabled">前へ</a></li>
+            <li class="js-paging-next"><a href="javascript:void(0);" class="">次へ</a></li>
+            <li class="js-paging-last"><a href="javascript:void(0);" class="go"><i class="ir">&gt;&gt;</i></a></li>
+          </ul>
+        </div>
+        </div>
+        <p class="pd-10 r">
+          <a href="/new/all/1001" class="bx-d pale tx-main tx-m b">このカテゴリの新着トーク <i class="s-arrows circlepink-b-r"></i></a>
+        </p>
+        <!--p class="r" style="margin:15px 10px">
+          <a href="/fav/list" class="tx-main tx-ul b">ランキングメニュー一覧へ⇒</a>
+        </p-->
+        <hr class="rule" style="margin:0">
+      </div>
+      <div class="c">
+        <a href="/s/love_201303" class="notice" style="color:#999999;font-size:14px;margin:12px 0;display:inline-block;text-decoration:underline;">不倫？デキ婚？話題のトークをチェック</a>
+      </div>
+    </div>
+    <!-- /threads wrapper -->
+    <div>
+      <div class="hl-c deep has-ico-categories has-fake tx-l" style="padding:7px 10px 12px">
+        <p class="c-status tx-fff b">
+          <i></i>ステイタス別人気ランキング<span class="timestamp">18:31更新</span>
+        </p>
+      </div>
+    </div>
+    <div class="lv-light-b tx-l">
+      <ul>
+        <li><a href="/fav/profile/birthday" class="has-fake bk pd-10"><b>同年代</b>
+        <div class="tx-s tx-muted elps">
+           旦那の不倫相手に慰謝料を請求すると言ったら、旦那に『お願いだからやめて。もう過去の事だし、相手はもう
+        </div>
+        </a></li>
+        <li><a href="/fav/profile/romanstatus" class="has-fake bk pd-10"><b>恋愛ステイタス</b>
+        <div class="tx-s tx-muted elps">
+           結婚はしたいけど子供は欲しくない。 子ども可愛いと思うし、欲しいと思うけど やっぱり自分のことが好き
+        </div>
+        </a></li>
+        <li><a href="/fav/profile/happiness" class="has-fake bk pd-10"><b>しあわせ度</b>
+        <div class="tx-s tx-muted elps">
+           23歳フリーターです。少し、愚痴を聞いてください。 私は姉が看護学校に行くためお金の都合で高校にい
+        </div>
+        </a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="hl-c deep has-ico-categories has-fake tx-l" style="padding:7px 10px 12px">
+        <p class="c-rank tx-fff b">
+          <i></i>カテゴリ別人気ランキング<span class="timestamp">18:31更新</span>
+        </p>
+      </div>
+    </div>
+    <div class="lv-light-b has-ico-categories tx-l">
+      <ul>
+        <li class="c-all"><a href="/fav" class="has-fake bk" style="padding:9px 6px 8px;"><i></i><b>総合</b>
+        <div class="tx-s tx-muted elps">
+           東日本大震災から先週で2年が経ちました。 皆さんは黙祷なさったでしょうか？もちろん都合でできなかった
+        </div>
+        </a></li>
+        <li class="c-love"><a href="/fav/day/1001" class="has-fake bk" style="padding:9px 6px 8px;"><i></i><b>恋愛</b>
+        <div class="tx-s tx-muted elps">
+           旦那の不倫相手に慰謝料を請求すると言ったら、旦那に『お願いだからやめて。もう過去の事だし、相手はもう
+        </div>
+        </a></li>
+        <li class="c-nightlife"><a href="/fav/day/1005" class="has-fake bk" style="padding:9px 6px 8px;"><i></i><b>ナイトライフ</b>
+        <div class="tx-s tx-muted elps">
+           エッチはしたいけど旦那とはしたくない。
+        </div>
+        </a></li>
+        <li class="c-mind"><a href="/fav/day/1004" class="has-fake bk" style="padding:9px 6px 8px;"><i></i><b>ココロとカラダ</b>
+        <div class="tx-s tx-muted elps">
+           生理予定日から一週間たっても生理が来ないー 今から妊娠検査薬買って検査します。 ここ半年くらいは
+        </div>
+        </a></li>
+        <li class="c-work"><a href="/fav/day/1002" class="has-fake bk" style="padding:9px 6px 8px;"><i></i><b>おしごと</b>
+        <div class="tx-s tx-muted elps">
+           23歳フリーターです。少し、愚痴を聞いてください。 私は姉が看護学校に行くためお金の都合で高校にい
+        </div>
+        </a></li>
+        <li class="c-home"><a href="/fav/day/1003" class="has-fake bk" style="padding:9px 6px 8px;"><i></i><b>家庭</b>
+        <div class="tx-s tx-muted elps">
+           女の子→父親似、男の子→母親似ってよく言うけれど、コレって本当？？ 私の目がくっきり二重で、旦那が一
+        </div>
+        </a></li>
+        <li class="c-chat"><a href="/fav/day/1006" class="has-fake bk" style="padding:9px 6px 8px;"><i></i><b>雑談</b>
+        <div class="tx-s tx-muted elps">
+           東日本大震災から先週で2年が経ちました。 皆さんは黙祷なさったでしょうか？もちろん都合でできなかった
+        </div>
+        </a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="hl-c deep has-ico-categories has-fake tx-l" style="padding:7px 10px 12px">
+        <p class="c-term tx-fff b">
+          <i style="vertical-align:-5px"></i>期間別人気ランキング
+        </p>
+      </div>
+    </div>
+    <div class="lv-light-b tx-l">
+      <ul>
+        <li><a href="/fav" class="has-fake bk pd-10"><b>今日<span class="tx-s">（2013年3月21日）</span></b>
+        <div class="tx-s tx-muted elps" style="padding-top:3px">
+           東日本大震災から先週で2年が経ちました。 皆さんは黙祷なさったでしょうか？もちろん都合でできなかった
+        </div>
+        </a></li>
+        <li class="last"><a href="/fav/last_week" class="has-fake bk pd-10"><b>一週間<span class="tx-s">（2013年3月14日〜3月20日）</span></b>
+        <div class="tx-s tx-muted elps" style="padding-top:3px">
+           婚外恋愛って、悪い事？ 私には彼がいますが、お互い割り切って付き合ってる。 家庭を第一に、無理な
+        </div>
+        </a></li>
+        <li><a href="/fav/last_month" class="has-fake bk pd-10"><b>先月<span class="tx-s">（2013年2月）</span></b>
+        <div class="tx-s tx-muted elps" style="padding-top:3px">
+        </div>
+        </a></li>
+        <li class="last"><a href="/s/fav100_2012" class="has-fake bk pd-10"><b>去年<span class="tx-s">（2012年）</span></b>
+        <div class="tx-s tx-muted elps" style="padding-top:3px">
+        </div>
+        </a></li>
+      </ul>
+    </div>
+    <p class="center">
+      <a href="http://link.ameba.jp/165651/" target="_blank" data-outside-link="TRUE" class="boost" style="color:#ff3377;">&gt;&gt; 友達を招待する</a>
+    </p>
+  </div>
+  <!-- /main -->
+  <div class="c" style="padding-bottom:10px;margin:10px 0 0">
+    <ul>
+      <li class="mg-t10"><a href="/enquete"><img src="/files/img/bnr/enquete_20130321_pb.png" alt="第12回アンケート"></a></li>
+      <li class="mg-t10"><a href="/s/nightlife_201303"><img src="/files/img/bnr/special_nightlife_201303_pb.png?1363833777" alt="ナイトライフスペシャル～2013年3月版～ 女性たちの過激すぎるいとなみのすべて"></a></li>
+    </ul>
+  </div>
+  <nav class="nav-global" id="navGlobal" style="top:auto;">
+  <ul>
+    <li class="tab-new"><a href="/category_new"><i></i>トップページ</a></li>
+    <li class="tab-fav active"><a href="/fav"><i></i>ランキング</a></li>
+    <li class="tab-hist"><a href="/hist"><i></i>履歴</a></li>
+    <li class="tab-cnts"><a href="/contents"><i></i>占い・ゲーム</a></li>
+    <li class="tab-mypage"><a href="/mypage"><i></i>マイページ</a></li>
+  </ul>
+  </nav>
+  <div id="gt-amb-footer"></div>
+</div>
+<!-- /container -->
+<script src="http://stat.amebame.com/pub/sdk/js/all.js"></script>
+<script> (function(){ AMB.configure({ clientId: '8572d14da058fe5c8110f1583a35a515966e3fe6d9066c6e664be981a3b45304', sessionId: 'b67e48b3b3e9f8a9483245316da981672447a202', token: 'c89a7605bffa5a97071c86fa2003527d8374ea88c2e07597f03568d8c8e14c9f' }); AMB.bootstrap(function(response) { if (response.auth) { } else { } }); if(document.getElementsByClassName('amb-header-container').length > 0){ AMB.header('.amb-header-container'); } else { AMB.header('body'); } AMB.footer('#gt-amb-footer', {category: 'community', payment: 0}); })(); </script>
+<script src="/files/js/zepto.min.js"></script>
+</body>
+</html>

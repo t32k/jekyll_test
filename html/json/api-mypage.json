@@ -1,0 +1,49 @@
+{
+    "user_data": {
+        "user_name": "アナスタシア12098",
+        "age": 26,
+        "self_introduction": "職場の関係でワカメの街で過ごすことが多いです。結婚に焦ってますよ。",
+        "romanstatus_name": "未婚",
+        "happiness_point": 3,
+        "job": "会社員",
+        "talk_count": 153,
+        "reaction_count": 98
+    },
+    "talk_list": [
+        {
+            "body": "コンビ結成を考えているのですが本当にこのまま吉本で...",
+            "talk_url": "/html/talk/detail/"
+        },
+		{
+            "body": "私はお酒が飲めません。お酒ビンゴを考えているのですが本当にこのまま吉本バナナで...",
+            "talk_url": "/html/talk/detail/"
+        },
+		{
+            "body": "最近は女性が結婚するのが難しくなったとかならないとか今は昔。考えているのですが...",
+            "talk_url": "/html/talk/detail/"
+        }
+    ],
+    "wall_list": [
+        {
+            "p_user_name": "エミカ12345",
+            "p_user_page": "/html/user/",
+            "p_age": 20,
+            "p_wall_time": "5分前",
+            "p_wall_body": "そういうときって相手も同じ事を思っている高そうですよね。お互いコ",
+            "p_wall_count": 3,
+            "c_user_name": "ユウコ23425",
+            "c_user_page": "/html/user/",
+            "c_age": 29,
+            "c_wall_time": "3時間前",
+            "c_wall_comment": "みみずくは曲の病気野ねずみめの嵐をあけるゴーシュますた。"
+        },
+        {
+            "p_user_name": "エミカ12345",
+            "p_user_page": "/html/user/",
+            "p_age": 20,
+            "p_wall_time": "5分前",
+            "p_wall_body": "そういうときって相手も同じ事を思っている高そうですよね。お互いコ",
+            "p_wall_count": 0
+        }
+    ]
+}

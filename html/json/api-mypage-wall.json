@@ -1,0 +1,40 @@
+{
+    "wall_list": [
+        {
+            "p_wall_body": "相談にのってくれてありがとございました！結局別れてしまったけど、なんの未練もなくスッキリです^^",
+            "p_user_name": "エミカ12345",
+            "p_user_page": "/html/user/",
+            "p_age": 20,
+            "p_wall_time": "30分前",
+            "p_wall_del_url": "/api/wall/delete/",
+            "p_wall_url": "/html/wall/detail/",
+            "c_user_name": "ルミカ23425",
+            "c_user_page": "/html/user/",
+            "c_age": "26",
+            "c_wall_time": "31分前",
+            "c_wall_comment": "よかったですね、私は未だに悩んでいますああああああ",
+            "p_wall_count": 3
+        },
+        {
+            "p_wall_body": "あざっすー",
+            "p_user_name": "レイ0001",
+            "p_user_page": "/html/user/",
+            "p_age": 24,
+            "p_wall_time": "45分前",
+            "p_wall_del_url": "/api/wall/delete/",
+            "p_wall_url": "/html/wall/detail/",
+            "p_wall_count": 0
+        },
+        {
+            "p_wall_body": "ちょりーんす^^",
+            "p_user_name": "ユウコ0001",
+            "p_user_page": "/html/user/",
+            "p_age": 32,
+            "p_wall_time": "2時間前",
+            "p_wall_del_url": "/api/wall/delete/",
+            "p_wall_url": "/html/wall/detail/",
+            "p_wall_count": 0 
+        }
+    ],
+    "more_url": "/html/json/api-mypage-wall.json"
+}

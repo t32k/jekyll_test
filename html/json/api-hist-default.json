@@ -1,0 +1,83 @@
+{
+	"update": {
+		"notify": 2,
+		"talk": [
+			{
+				"is_notify": true,
+				"talk_id": "10987654321",
+				"name": "ルミカ129098",
+				"user_page": "/html/mypage/",
+				"age": 26,
+				"time": "10分前",
+				"text":"彼氏との笑いのツボが合いません。コンビ結成を考えているのですが本当にこのまま吉本でデビューしても大丈夫なのか不安で...",
+				"comment_count": 3,
+				"iine_count": 4,
+				"iine_api_url": "/api/fav/iine/1/12345678901/",
+				"iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+				"is_iine_talk": false,
+				"talk_del_url": "/html/",
+				"p_name": "エミ12345",
+				"p_user_page": "/html/mypage/",
+				"p_age": 20,
+				"p_time": "5分前",
+				"p_text": "そういうときって相手も同じ事を思っている高そうですよね。お互いコンビ解消するほど...",
+				"talk_url": "/html/talk/detail/"
+			},
+			{
+				"is_notify": true,
+				"talk_id": "10987654321",
+				"name": "ルミカ129098",
+				"user_page": "/html/mypage/",
+				"age": 26,
+				"time": "10分前",
+				"text": "私はお酒が飲めません。コンビ結成を考えているのですが本当にこのまま吉本でデビューしても大丈夫なのか不安で...",
+				"comment_count": 0,
+				"iine_count": 4,
+				"iine_api_url": "/api/fav/iine/1/12345678901/",
+				"iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+				"is_iine_talk": false,
+				"talk_del_url": "/html/",
+				"talk_url": "/html/talk/detail/"
+			},
+			{
+				"is_notify": false,
+				"talk_id": "10987654321",
+				"name": "ルミカ129098",
+				"user_page": "/html/mypage/",
+				"age": 26,
+				"time": "10分前",
+				"text": "季節感のツボが合いません。コンビ結成を考えているのですが本当にこのまま吉本でデビューしても大丈夫なのか不安で...",
+				"comment_count": 3,
+				"iine_count": 4,
+				"iine_api_url": "/api/fav/iine/1/12345678901/",
+				"iine_cancel_api_url": "/api/fav/iine_cancel/1/12345678901/",
+				"is_iine_talk": true,
+				"talk_del_url": "/html/",
+				"p_name": "エミ12345",
+				"p_user_page": "/html/mypage/",
+				"p_age": 20,
+				"p_time": "5分前",
+				"p_text": "そういうときって相手も同じ事を思っている高そうですよね。お互いコンビ解消するほど...",
+				"talk_url": "/html/talk/detail/"
+			}
+		],
+		"more_url": "/html/json/api-hist-update-more.json"
+	},
+	"access": {
+		"talk": [
+			{
+				"text": "彼氏との笑いのツボが合いません。コンビ結成を考えているのですが本当にこのまま吉本で...",
+				"talk_url": "/html/talk/detail/"
+			},
+			{
+				"text": "彼氏との笑いのツボが合いません。コンビ結成を考えているのですが本当にこのまま吉本で...",
+				"talk_url": "/html/talk/detail/"
+			},
+			{
+				"text": "彼氏との笑いのツボが合いません。コンビ結成を考えているのですが本当にこのまま吉本で...",
+				"talk_url": "/html/talk/detail/"
+			}
+		],
+		"more_url": "/html/json/api-hist-access-more.json"
+	}
+}

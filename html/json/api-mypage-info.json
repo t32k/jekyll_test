@@ -1,0 +1,41 @@
+{
+    "connection_list": [
+        {
+            "reaction_count": "2",
+            "age": 21,
+            "user_name": "ミカ129098",
+            "user_page": "/html/user/",
+            "talk_time": "3分前",
+            "reaction": "あなたのトークにいいねしました。",
+            "reaction_url": "/html/talk/detail/"
+        },
+        {
+            "reaction_count": "2",
+            "age": 22,
+            "user_name": "マリコ129098",
+            "user_page": "/html/user/",
+            "talk_time": "5分前",
+            "reaction": "あなたのコメントにいいねしました。",
+            "reaction_url": "/html/talk/detail/"
+        },
+        {
+            "reaction_count": "12",
+            "age": 23,
+            "user_name": "レイ129098",
+            "user_page": "/html/user/",
+            "talk_time": "1時前",
+            "reaction": "あなたのトークにいいねしました。",
+            "reaction_url": "/html/talk/detail/"
+        },
+        {
+            "reaction_count": "2",
+            "age": 24,
+            "user_name": "ナタリー129098",
+            "user_page": "/html/user/",
+            "talk_time": "4日前",
+            "reaction": "あなたのトークにいいねしました。",
+            "reaction_url": "/html/talk/detail/"
+        }
+    ],
+    "more_url": "/html/json/api-mypage-info.json"
+}

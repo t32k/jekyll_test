@@ -1,0 +1,39 @@
+{
+	"c_comment" : [
+		{
+			"c_name" : "ユウコ23425",
+			"c_user_page" : "/html/mypage/",
+			"c_age" : 33,
+			"c_time" : "3時間前",
+			"c_text" : "みみずくは曲の病気野ねずみめの嵐をあけるゴーシュますた。",
+			"c_iine_count" : "4",
+			"c_iine_api_url" : "/api/fav/iine/3/32345678901/",
+			"c_iine_cancel_api_url" : "/api/fav/iine_cancel/3/32345678901/",
+			"is_iine_c_comment" : true,
+			"c_del_url" : "/html/"
+		},
+		{
+			"c_name" : "ユウコ23425",
+			"c_user_page" : "/html/mypage/",
+			"c_age" : 33,
+			"c_time" : "3時間前",
+			"c_text" : "みみずくは曲の病気野ねずみめの嵐をあけるゴーシュますた。",
+			"c_iine_count" : "4",
+			"c_iine_api_url" : "/api/fav/iine/3/32345678901/",
+			"c_iine_cancel_api_url" : "/api/fav/iine_cancel/3/32345678901/",
+			"is_iine_c_comment" : false
+		},
+		{
+			"c_name" : "ユウコ23425",
+			"c_user_page" : "/html/mypage/",
+			"c_age" : 33,
+			"c_time" : "3時間前",
+			"c_text" : "みみずくは曲の病気野ねずみめの嵐をあけるゴーシュますた。",
+			"c_iine_count" : "4",
+			"c_iine_api_url" : "/api/fav/iine/3/32345678901/",
+			"c_iine_cancel_api_url" : "/api/fav/iine_cancel/3/32345678901/",
+			"is_iine_c_comment" : false
+		}
+	],
+	"c_more_url": "/html/json/api-comment-detail-more.json"
+}

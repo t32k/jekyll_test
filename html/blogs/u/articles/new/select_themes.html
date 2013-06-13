@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>テーマの選択 | GIRL'S TALK</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css?20130128">
+  <style>
+  </style>
+</head>
+<body>
+  <div class="container bg-dark-a">
+    <header>
+      <div class="bar-title" id="header">
+        <a href="javascript:history.back();" class="back">キャンセル</a>
+        <h1 class="title elps">テーマの選択</h1>
+      </div>
+    </header>
+
+    <div class="main tx-l b">
+
+      <ul class="lv-a deep">
+        <li>
+          <a href="#" class="has-arrow white-t-s pd-10 tx-fff js-accordions">れれれのテーマ</a>
+          <ul class="lv-a deep-a bx-shadow-t">
+            <li><a href="#" class="bk pd-10">不倫のこと</a></li>
+            <li><a href="#" class="bk pd-10">おいしいごはん</a></li>
+            <li><a href="#" class="bk pd-10">旅行</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="is-table has-ico-categories has-arrow white-t-s js-accordions" style="padding:9px 10px">
+            <span class="is-cell c-love pd-r5"><i style="vertical-align:-3px"></i></span>
+            <span class="is-cell tx-fff">恋愛（33）</span></a>
+          <ul class="lv-a deep-a bx-shadow-t">
+            <li><a href="#" class="bk pd-10">恋愛総合</a></li>
+            <li><a href="#" class="bk pd-10">今日の報告</a></li>
+            <li><a href="#" class="bk pd-10">失恋</a></li>
+            <li><a href="#" class="bk pd-10">忘れられない恋</a></li>
+            <li><a href="#" class="bk pd-10">彼氏いない</a></li>
+            <li><a href="#" class="bk pd-10">不倫</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="is-table has-ico-categories has-arrow white-b-s js-accordions" style="padding:9px 10px">
+            <span class="is-cell c-nightlife pd-r5"><i style="vertical-align:-3px"></i></span>
+            <span class="is-cell tx-fff">ナイトライフ（25）</span></a>
+          <ul class="lv-a deep-a bx-shadow-t is-hidden">
+            <li><a href="#" class="bk pd-10">不倫のこと</a></li>
+            <li><a href="#" class="bk pd-10">おいしいごはん</a></li>
+            <li><a href="#" class="bk pd-10">旅行</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="is-table has-ico-categories has-arrow white-b-s js-accordions" style="padding:9px 10px">
+            <span class="is-cell c-mind pd-r5"><i style="vertical-align:-3px"></i></span>
+            <span class="is-cell tx-fff">ココロとカラダ（18）</span></a>
+          <ul class="lv-a deep-a bx-shadow-t is-hidden">
+            <li><a href="#" class="bk pd-10">不倫のこと</a></li>
+            <li><a href="#" class="bk pd-10">おいしいごはん</a></li>
+            <li><a href="#" class="bk pd-10">旅行</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="is-table has-ico-categories has-arrow white-b-s js-accordions" style="padding:9px 10px">
+            <span class="is-cell c-work pd-r5"><i style="vertical-align:-3px"></i></span>
+            <span class="is-cell tx-fff">おしごと（21）</span></a>
+          <ul class="lv-a deep-a bx-shadow-t is-hidden">
+            <li><a href="#" class="bk pd-10">不倫のこと</a></li>
+            <li><a href="#" class="bk pd-10">おいしいごはん</a></li>
+            <li><a href="#" class="bk pd-10">旅行</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="is-table has-ico-categories has-arrow white-b-s js-accordions" style="padding:9px 10px">
+            <span class="is-cell c-home pd-r5"><i style="vertical-align:-3px"></i></span>
+            <span class="is-cell tx-fff">家庭（28）</span></a>
+          <ul class="lv-a deep-a bx-shadow-t is-hidden">
+            <li><a href="#" class="bk pd-10">不倫のこと</a></li>
+            <li><a href="#" class="bk pd-10">おいしいごはん</a></li>
+            <li><a href="#" class="bk pd-10">旅行</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="is-table has-ico-categories has-arrow white-b-s js-accordions" style="padding:9px 10px">
+            <span class="is-cell c-chat pd-r5"><i style="vertical-align:-3px"></i></span>
+            <span class="is-cell tx-fff">雑談（34）</span></a>
+          <ul class="lv-a deep-a bx-shadow-t is-hidden">
+            <li><a href="#" class="bk pd-10">不倫のこと</a></li>
+            <li><a href="#" class="bk pd-10">おいしいごはん</a></li>
+            <li><a href="#" class="bk pd-10">旅行</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <p class="pd-10 bx-shadow-t"><a href="#" class="btn deep">テーマを追加</a></p>
+    </div><!-- /.main -->
+  </div><!-- /.container -->
+
+  <script src="/files/js/zepto.min.js"></script>
+  <script>
+    $('.js-accordions').on('click', function(e){
+        e.preventDefault();
+        if( $(this).hasClass('white-b-s') ) {
+          $(this).addClass('white-t-s').removeClass('white-b-s');
+          $(this).next().removeClass('is-hidden');
+        } else {
+          $(this).addClass('white-b-s').removeClass('white-t-s');
+          $(this).next().addClass('is-hidden');
+        }
+    });
+  </script>
+</body>
+</html>

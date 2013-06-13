@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>問題報告| GIRL’S TALKS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css">
+</head>
+
+<body>
+
+<div class="container">
+    <header class="relative">
+      <div class="bar-title">
+        <a href="javascript:history.back();" class="button back">戻る</a>
+        <h1 class="title elps">トーク</h1>
+        <a href="/html/talk/add/" class="icon right"><i class="write"></i></a>
+      </div>
+    </header>
+
+  <div class="bx-modal">
+    <dl>
+      <dt class="mg-b15 tx-fff tx-m b c">問題を報告する</dt>
+      <dd>
+        <ul>
+          <li><a href="#" class="btn primary">問題を報告</a></li>
+          <li><a href="#" class="btn">キャンセル</a></li>
+        </ul>
+      </dd>
+    </dl>
+  </div><!-- /box-modal -->
+
+  <div class="bx-modal">
+    <dl>
+      <dt class="mg-b15 tx-fff tx-m b c">報告する理由</dt>
+      <dd>
+        <ul>
+          <li><a href="#" class="btn std">個人情報の記載</a></li>
+          <li><a href="#" class="btn std">誹謗中傷の記載</a></li>
+          <li><a href="#" class="btn std">サービス規約に違反</a></li>
+          <li><a href="#" class="btn">キャンセル</a></li>
+        </ul>
+      </dd>
+    </dl>
+  </div><!-- /box-modal -->
+  
+  <div class="bx-modal">
+    <dl>
+      <dt class="mg-b15 tx-fff tx-m b c">モーダルボックス ボタン各種</dt>
+      <dd>
+        <ul>
+          <li><a href="#" class="btn primary">個人情報の記載</a></li>
+          <li><a href="#" class="btn">誹謗中傷の記載</a></li>
+          <li><a href="#" class="btn tw">Twitterでシェア</a></li>
+          <li><a href="#" class="btn fb">Facebookでシェア</a></li>
+        </ul>
+      </dd>
+    </dl>
+  </div><!-- /box-modal -->
+  
+  
+
+    <div class="main detail">
+
+      <div id="pullToRefreshTop">
+      
+
+
+      </div><!-- /pullToRefreshTop -->
+
+      <div class="box-comment"><input type="text" placeholder="コメントを書く"></div>
+
+    </div><!-- /main -->
+    
+   <nav class="nav-global" id="navGlobal">
+      <ul>
+        <li class="tab-fav active"><a href="/html/fav/"><i></i>人気トーク</a></li>
+        <li class="tab-new"><a href="/html/category_new/"><i></i>新着トーク</a></li>
+        <li class="tab-hist"><a href="/html/hist/"><i></i>履歴</a></li>
+        <li class="tab-mypage"><a href="/html/mypage/"><i></i>マイページ</a></li>
+      </ul>
+    </nav>
+
+    <div id="gt-amb-footer"></div>
+    <script src="http://stat.sb-amebame.com/pub/sdk/js/all.js"></script>
+    <script>
+      (function(){
+        AMB.configure({
+          clientId: '6c3f483940115488ff9ae69f6489a08682ba6d0721029068d95c0c6ce139b142',
+          token: '2042bbdd5f4cdd70efc08d7306bdaaa01b8ac47e0aa3fa91ad98d2ef906a55eb'
+        });
+        AMB.header('body');
+        AMB.footer('#gt-amb-footer');
+      })();
+    </script>
+  </div><!-- /container -->
+
+</body>
+</html>

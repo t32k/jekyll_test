@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>GIRL’S TALK 参加したトーク一覧</title>
+  <meta name="description" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="bar-title">
+        <a href="#" class="button back">戻る</a>
+        <h1 class="title elps">参加したトーク</h1>
+      </div>
+    </header>
+    <div class="main">
+    <ul id="template" class="threads">
+
+      <script id="thread" type="text/html">
+        {#talk_list}
+        <li class="thread no newNode" data-talk-url="{talk_url}">
+          <div class="talk">
+            <p class="line-text">{body}</p>
+            <p class="line-info">
+              <a href="{user_page}" class="name">{user_name}（{age}歳）</a>
+              <span class="timestamp">{talk_time}</span></p>
+            <p class="line-action clearfix sub-btn">
+              <button class="btn-comment">{comment_count}</button>
+              <button class="btn-like" data-iine-api="{iine_api_url}" data-iine-cancel-api="{iine_cancel_api_url}" data-is-iine="{is_iine_talk}" data-iine-type="talk_no">{like_count}</button>
+            </p>
+            {?talk_del_url}<div class="line-del" data-del-api="{talk_del_url}">削除</div>{/talk_del_url}
+          </div>
+        </li>
+        {/talk_list}
+      </script>
+
+      <script id="more" type="text/html">
+        <li class="more-contents"><button data-more-api="{more_url}">もっとみる</button></li>
+      </script>
+
+      </ul><!-- /threads -->
+    </div><!-- /main -->
+
+    <nav class="nav-global" id="navGlobal">
+      <ul>
+        <li class="tab-fav"><a href="/html/fav/"><i></i>人気トーク</a></li>
+        <li class="tab-new"><a href="/html/category_new/"><i></i>新着トーク</a></li>
+        <li class="tab-hist"><a href="/html/hist/"><i></i>履歴</a></li>
+        <li class="tab-mypage active"><a href="/html/mypage/"><i></i>マイページ</a></li>
+      </ul>
+    </nav>
+
+    <div id="gt-amb-footer"></div>
+    
+  </div><!-- /container -->
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript">window.jQuery || document.write('<script src="/files/js/jquery-1.7.2.min.js"><\/script>')</script>
+
+  <script src="/files/js/jquery.easing.1.3.js"></script>
+  <script src="/files/js/jquery.pullToRefresh.js"></script>
+  <script src="/files/js/dust-full-1.0.0-min.js"></script>
+  <script src="/files/js/jquery.ba-throttle-debounce.min.js"></script>
+  <script src="/files/js/common_new.js"></script>
+
+  <script src="/files/js/mypage.js"></script>
+  <script>
+  (function(){
+    apiDomain = '';
+    mypageTalk.init('/html/json/api-mypage-talk.json');
+  })();
+  </script>
+
+  <script src="http://stat.sb-amebame.com/pub/sdk/js/all.js"></script>
+  <script>
+  (function(){
+    AMB.configure({
+      clientId: '6c3f483940115488ff9ae69f6489a08682ba6d0721029068d95c0c6ce139b142',
+      token: '2042bbdd5f4cdd70efc08d7306bdaaa01b8ac47e0aa3fa91ad98d2ef906a55eb'
+    });
+    AMB.header('body');
+    AMB.footer('#gt-amb-footer', {category: 'community', payment: 0});
+  })();
+  </script>
+
+</body>
+</html>

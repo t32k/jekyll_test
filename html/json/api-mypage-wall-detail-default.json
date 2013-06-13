@@ -1,0 +1,35 @@
+{
+    "wall_data": {
+        "p_user_name": "リノ10001",
+        "p_user_page": "/user/",
+        "p_age": "31",
+        "p_wall_count": "3",
+        "p_wall_time": "5時間前",
+        "p_wall_body": "相談にのってくれてありがとございました！結局別れてしまったけど、なんの未練もなくスッキリです^^",
+        "p_wall_del_url": "/api/wall/delete/"
+    },
+    "wall_comment_list": [
+        {
+            "c_user_name": "ルミカ120908",
+            "c_user_page": "/user/",
+            "c_age": "19",
+            "c_wall_time": "1時間前",
+            "c_wall_comment": "よかったですね！私は未だに悩んでいます・・・"
+        },
+        {
+            "c_user_name": "エミカ120908",
+            "c_user_page": "/user/",
+            "c_age": "20",
+            "c_wall_time": "2時間前",
+            "c_wall_comment": "ルミカさんもがんばってくださいね！"
+        },
+        {
+            "c_user_name": "ルミカ120908",
+            "c_user_page": "/user/",
+            "c_age": "24",
+            "c_wall_time": "3時間前",
+            "c_wall_comment": "ありがとうございます。ちょっと時間はかかりそうですけど・・・ "
+        }
+    ],
+    "more_url": "/html/json/api-mypage-wall-detail-more.json"
+}

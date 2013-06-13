@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>GIRL’S TALKS 【10代】閲覧案内ページ</title>
+  <meta name="description" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css">
+  <link rel="stylesheet" href="/files/css/katoken.css">
+  <link rel="stylesheet" href="/files/css/pullToRefresh.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="bar-title">
+        <h1 class="title elps"><img src="/files/img/logo.png" alt="Girl's Talk"></h1>
+      </div>
+    </header>
+
+    <div class="main entrance">
+      <div class="lead">
+        <p>GIRL'S TALKは<br>
+          18歳以上の女性を対象としたサービスです。
+        </p>
+        <p>Ameba登録情報上、<br> 
+          ●●様は18歳以下ですので<br>
+          サービス利用に制限が発生致します。</p>
+        <p>18歳以下のユーザーの皆様は<br> 
+          サービス閲覧のみが可能です。<br>
+          ご了承下さい。</p>
+        <p><a href="#" class="btn-look">のぞいてみる</a></p>
+      <p class="note"><span class="asterisk">※</span><a href="#">ご利用上の注意事項</a></p>
+     </div>
+    </div><!-- /main -->
+
+    <div id="gt-amb-footer"></div>
+    <script src="http://stat.sb-amebame.com/pub/sdk/js/all.js"></script>
+    <script>
+      (function(){
+        AMB.configure({
+          clientId: '6c3f483940115488ff9ae69f6489a08682ba6d0721029068d95c0c6ce139b142',
+          token: ''
+        });
+        AMB.header('body');
+        AMB.footer('#gt-amb-footer', {category: 'community', payment: 0});
+      })();
+    </script>
+
+  </div><!-- /container -->
+
+  <script src="/files/js/jquery-1.7.2.min.js"></script>
+  <script src="/files/js/dust-full-0.3.0.min.js"></script>
+  <script src="/files/js/common_new.js"></script>
+  <script>
+  window.onload = function(){
+    //
+  };
+  </script>
+
+</body>
+</html>

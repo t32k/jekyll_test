@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>カキコミ一覧｜GIRL'S TALK</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="/files/css/app.css">
+</head>
+<body>
+<div class="container">
+  <header>
+  <div class="bar-title">
+    <a href="javascript:history.back();" class="button back">戻る</a>
+    <h1 class="title elps">カキコミ一覧</h1>
+    <a href="javascript:void(0);" class="right" id="btnDraft" data-type="draft" style="display:none;">保存中</a>
+  </div>
+  </header>
+  <div class="main">
+    <ul class="threads my wall" id="template">
+      <script id="more" type="text/html"> <li class="js-more"><a href="javascript:void(0)" class="btn pale" style="margin:18px 10px" data-more-api="{more_url}">もっとみる</a></li> </script>
+      <li class="thread small"><a href="javascript:void(0);" class="btn" id="btnComment">カキコミする</a></li>
+      <li class="thread" data-wall-url="/mypage/wall/detail/6588">
+      <div class="comment">
+        <div class="line-text">
+          <p class="line-info">
+            <a href="/user/320" class="name">マリ（19歳）<span class="id">ID:eFDCS</span></a><span class="timestamp">2日前</span></p>
+          <p>｡･*･:≡( ε:)</p>
+        </div>
+        <p class="line-action clearfix">
+          <button class="btn-comment">3</button></p>
+        <div class="child">
+          <p class="line-info">
+            <a href="/user/320" class="name">マリ（19歳）<span class="id">ID:eFDCS</span></a><span class="timestamp">2日前</span></p>
+          <p>｡･*･:≡( ε:)</p>
+          <div class="more-comment r" style="margin:0 -10px 0 -35px">
+            <hr class="rule light-a" style="margin:0">
+            <a href="/mypage/wall/detail/6588" class="has-fake b">全3件</a>
+          </div>
+        </div>
+        <!-- /child -->
+        <div class="box-btn-del">
+          <button class="btn-del" data-del-api="/api/wall/delete/6588" data-del-parents="2">削除</button>
+        </div>
+      </div>
+      </li>
+      <!-- /thread -->
+      <li class="thread" data-wall-url="/mypage/wall/detail/6587">
+      <div class="comment">
+        <div class="line-text">
+          <p class="line-info">
+            <a href="/user/320" class="name">マリ（19歳）<span class="id">ID:eFDCS</span></a><span class="timestamp">2日前</span></p>
+          <p>(ヾﾉ･ω･`)ﾑﾘﾑﾘ</p>
+        </div>
+        <p class="line-action clearfix">
+          <button class="btn-comment">5</button></p>
+        <div class="child">
+          <p class="line-info">
+            <a href="/user/320" class="name">マリ（19歳）<span class="id">ID:eFDCS</span></a><span class="timestamp">2日前</span></p>
+          <p>(ヾﾉ･ω･`)ﾑﾘﾑﾘ</p>
+          <div class="more-comment r" style="margin:0 -10px 0 -35px">
+            <hr class="rule light-a" style="margin:0">
+            <a href="/mypage/wall/detail/6587" class="has-fake b">全5件</a>
+          </div>
+        </div>
+        <!-- /child -->
+        <div class="box-btn-del">
+          <button class="btn-del" data-del-api="/api/wall/delete/6587" data-del-parents="2">削除</button>
+        </div>
+      </div>
+      </li>
+      <!-- /thread -->
+    </ul>
+    <!-- /threads -->
+    <div class="bx-comment mg-10" id="boxComment"><p class="pd-10 tx-l">カキコミする</p></div>
+  </div>
+  <!-- /main -->
+  <nav class="nav-global" id="navGlobal" style="top: 1061px;">
+  <div class="nav-contents-notice">
+    <span><img src="" data-img-src="/files/img/bnr/contents_notice02.png" alt="GIRL'S TALKオリジナル★大人の恋愛ゲーム「誘惑★ダーリン」リリース！！" width="295" height="91" style="zoom:1"></span>
+  </div>
+  <ul>
+    <li class="tab-new"><a href="/category_new"><i></i>トップページ</a></li>
+    <li class="tab-fav"><a href="/fav"><i></i>ランキング</a></li>
+    <li class="tab-hist"><a href="/hist"><i></i>履歴</a></li>
+    <li class="tab-cnts"><a href="/contents"><i></i>占い・ゲーム</a></li>
+    <li class="tab-mypage active"><a href="/mypage"><i></i>マイページ</a></li>
+  </ul>
+  </nav>
+  <div id="gt-amb-footer"></div>
+</div>
+<!-- /container -->
+
+<!-- /投稿画面 -->
+<script src="http://stat.sb-amebame.com/pub/sdk/js/all.js"></script>
+<script> (function(){ AMB.configure({ clientId: '743e6cbf78d9cd58fe9d91d8880e821347f6702130a57842885c8dc97ff9963b', sessionId: 'e011ddd51f8dfdc203a69ab21f558a6ae3ea99b0', }); if(document.getElementsByClassName('amb-header-container').length > 0){ AMB.header('.amb-header-container'); } else { AMB.header('body'); } AMB.footer('#gt-amb-footer', {category: 'community', payment: 0}); })(); </script>
+<script src="/files/js/zepto.min.js"></script>
+<script src="/files/js/girlstalk.min.js?1359699183"></script>
+<script> $(document).ready(function(){ GST.page.myWall('/default/mypage/wall', ''); }); </script>
+</body>
+</html>

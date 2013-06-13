@@ -1,0 +1,51 @@
+{
+	"p_name": "エミカ12345",
+	"p_user_page": "/html/mypage/",
+	"p_age": 20,
+	"p_time": "5分前",
+	"p_text": "そういうときって相手も同じ事を思っている高そうですよね。お互いコンビ解消するほどでもないんじゃないかなーとおもいます。人力舎でもいいんじゃないかと思います。",
+	"p_iine_count": 4,
+	"p_iine_api_url": "/api/fav/iine/2/22345678901/",
+	"p_iine_cancel_api_url": "/api/fav/iine_cancel/2/22345678901/",
+	"is_iine_p_comment": false,
+	"p_del_url": "/html/",
+	"c_comment_count": 3,
+	"c_comment" : [
+		{
+			"c_name" : "ユウコ23425",
+			"c_user_page" : "/html/mypage/",
+			"c_age" : 33,
+			"c_time" : "3時間前",
+			"c_text" : "みみずくは曲の病気野ねずみめの嵐をあけるゴーシュますた。",
+			"c_iine_count" : "4",
+			"c_iine_api_url" : "/api/fav/iine/3/32345678901/",
+			"c_iine_cancel_api_url" : "/api/fav/iine_cancel/3/32345678901/",
+			"is_iine_c_comment" : true,
+			"c_del_url" : "/html/"
+		},
+		{
+			"c_name" : "ユウコ23425",
+			"c_user_page" : "/html/mypage/",
+			"c_age" : 33,
+			"c_time" : "3時間前",
+			"c_text" : "みみずくは曲の病気野ねずみめの嵐をあけるゴーシュますた。",
+			"c_iine_count" : "4",
+			"c_iine_api_url" : "/api/fav/iine/3/32345678901/",
+			"c_iine_cancel_api_url" : "/api/fav/iine_cancel/3/32345678901/",
+			"is_iine_c_comment" : false
+		},
+		{
+			"c_name" : "ユウコ23425",
+			"c_user_page" : "/html/mypage/",
+			"c_age" : 33,
+			"c_time" : "3時間前",
+			"c_text" : "みみずくは曲の病気野ねずみめの嵐をあけるゴーシュますた。",
+			"c_iine_count" : "4",
+			"c_iine_api_url" : "/api/fav/iine/3/32345678901/",
+			"c_iine_cancel_api_url" : "/api/fav/iine_cancel/3/32345678901/",
+			"is_iine_c_comment" : false
+		}
+	],
+	"more_url": "/html/json/api-comment-detail-more.json",
+	"redirect_url": "NULL"
+}

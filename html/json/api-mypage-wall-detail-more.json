@@ -1,0 +1,26 @@
+{
+    "wall_comment_list": [
+        {
+            "c_user_name": "ルミカ120908",
+            "c_user_page": "/user/",
+            "c_age": "19",
+            "c_wall_time": "1時間前",
+            "c_wall_comment": "よかったですね！私は未だに悩んでいます・・・"
+        },
+        {
+            "c_user_name": "エミカ120908",
+            "c_user_page": "/user/",
+            "c_age": "20",
+            "c_wall_time": "2時間前",
+            "c_wall_comment": "ルミカさんもがんばってくださいね！"
+        },
+        {
+            "c_user_name": "ルミカ120908",
+            "c_user_page": "/user/",
+            "c_age": "24",
+            "c_wall_time": "3時間前",
+            "c_wall_comment": "ありがとうございます。ちょっと時間はかかりそうですけど・・・ "
+        }
+    ],
+    "more_url": "/html/json/api-mypage-wall-detail-more.json"
+}

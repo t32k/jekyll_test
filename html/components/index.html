@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>COMPONENTS | GIRL’S TALK</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="/files/css/app.css">
+  <style>
+  	.h2 {
+  		font-size: 28px;
+  		margin-top: 24px;
+  		padding: 12px;
+  	}
+  	.h2:target {
+  		-webkit-animation-name: fire;
+  		-webkit-animation-duration: 3s;
+  	}
+  	@-webkit-keyframes fire {
+			from { background: rgba(255, 243, 190, 0.8); }
+			to { background: rgba(255, 243, 190, 0); }
+		}
+  	pre {
+  		border-radius: 5px;
+  		background: #efefef;
+  		padding: 10px;
+  	}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="bar-title">
+	    <a href="javascript:history.back();" class="button back">戻る</a>
+        <h1 class="title">2013/06/11 更新</h1>
+	    <a href="javascript:void();" class="button right js-menu">メニュー</a>
+      </div>
+		<div class="bx-order is-hidden js-order" style="z-index:100">
+			<ul class="lv-a deep b">
+				<li><a href="#headlines" class="has-arrow tx-fff">Headlines</a></li>
+				<li><a href="#listviews" class="has-arrow tx-fff">Listviews</a></li>
+				<li><a href="#buttons" class="has-arrow tx-fff">Buttons</a></li>
+				<li><a href="#boxes" class="has-arrow tx-fff">Boxes</a></li>
+				<li><a href="#color" class="has-arrow tx-fff">Color</a></li>
+				<li><a href="#background" class="has-arrow tx-fff">Background</a></li>
+				<li><a href="#navigation" class="has-arrow tx-fff">Navigation</a></li>
+				<li><a href="#forms" class="has-arrow tx-fff">Forms</a></li>
+				<li><a href="#rules" class="has-arrow tx-fff">Rules</a></li>
+			</ul>
+		</div>
+    </header>
+
+	<div class="main mod">
+<section class="tx-l b">
+<!-- ///////////////////////////////////////  -->
+	<div class="h2" id="color">Color</div>
+<!-- ///////////////////////////////////////  -->
+	<div class="tx-main mod">.tx-main #FF8CA9</div>
+	<div class="tx-vivid mod">.tx-vivid #FF668E</div>
+	<div class="tx-sub mod">.tx-sub #F1AC1A</div>
+	<div class="tx-sub2 mod">.tx-sub2 #F1C360</div>
+	<div class="tx-error mod">.tx-error #E42413</div>
+	<div class="tx-std mod">.tx-std #4D4D4D B:30%</div>
+	<div class="tx-muted mod">.tx-muted #7F7F7F B:50%</div>
+	<div class="tx-weak mod">.tx-weak #B3B3B3 B:70%</div>
+	<div class="tx-std2 mod">.tx-std2 #D9D9D9 B:85%</div>
+	<div class="bg-a deep tx-fff mod">.tx-fff #FFFFFF B:100%</div>
+</section>
+<section>
+<!-- ///////////////////////////////////////  -->
+	<div class="h2" id="background">Background</div>
+<!-- ///////////////////////////////////////  -->
+	<div class="bg-a deep mod pod">.bg-a.deep　ブログ #D9D9D9_#333333</div>
+	<div class="bg-dark mod pod">bg-dark　ログインとかグラデ</div>
+	<div class="bg-dark-a mod pod">bg-dark-a　#262626</div>
+	<div class="bg-dark-b mod pod">bg-dark-b　#333333</div>
+</section>
+<section>
+<!-- ///////////////////////////////////////  -->
+	<div class="h2" id="listviews">Listviews</div>
+<!-- ///////////////////////////////////////  -->
+
+	<ul class="lv-a pale">
+		<li><a href="#" class="has-arrow tx-l b">.lv-a.pale</a></li>
+		<li><a href="#" class="bk pod">上線：#ede8e0<br>下線：#fff</a></li>
+		<li><a href="#" class="has-fake bk pod">.has-fakeで⇒追加</a></li>
+		<li><a href="#" class="bk elps pod">.eplsで・・・表記だだだだだだだだだだだだだだだだだだだだだだ</a></li>
+	</ul>
+	<ul class="lv-a deep">
+		<li><a href="#" class="has-arrow tx-l b">.lv-a.deep</a></li>
+		<li><a href="#" class="bk pod">文字：#D9D9D9<br>背景：#333</a></li>
+		<li><a href="#" class="bk pod">上線：#262626<br>下線：#404040</a></li>
+		<li><a href="#" class="has-fake bk pod">.has-fakeで⇒追加</a></li>
+		<li><a href="#" class="bk elps pod">.eplsで・・・表記だだだだだだだだだだだだだだだだだだだだだだ</a></li>
+	</ul>
+	<ul class="lv-a deep-a">
+		<li><a href="#" class="has-arrow tx-l b">.lv-a.deep-a</a></li>
+		<li><a href="#" class="bk pod">文字：#D9D9D9<br>背景：#262626</a></li>
+		<li><a href="#" class="bk pod">上線：#1a1a1a<br>下線：#333</a></li>
+		<li><a href="#" class="has-fake bk pod">.has-fakeで⇒追加</a></li>
+		<li><a href="#" class="bk elps pod">.eplsで・・・表記だだだだだだだだだだだだだだだだだだだだだだ</a></li>
+	</ul>
+	<ul class="lv-a deep stripe">
+		<li><a href="#" class="has-arrow tx-l b">.lv-a.deep.stripe</a></li>
+		<li><a href="#" class="bk pod">文字：#D9D9D9<br>背景：#333</a></li>
+		<li><a href="#" class="bk pod">上線：#262626<br>下線：#404040</a></li>
+		<li><a href="#" class="has-fake bk pod">.has-fakeで⇒追加</a></li>
+		<li><a href="#" class="bk elps pod">.eplsで・・・表記だだだだだだだだだだだだだだだだだだだだだだ</a></li>
+	</ul>
+
+	<ul class="lv-dark-c">
+		<li class="thread"><a href="#" class="has-arrow tx-l b">廃止予定</a></li>		
+		<li class="thread"><a href="#" class="has-arrow tx-l b">.lv-dark-c</a></li>
+		<li class="thread"><a href="#" class="bk pod">文字：#FFF<br>背景：#262626</a></li>
+		<li class="thread"><a href="#" class="bk pod">上線：#000<br>下線：#333</a></li>
+	</ul>
+
+
+	<ul class="lv-a new">
+		<li><a href="#" class="has-arrow tx-l b">.lv-a.new</a></li>
+		<li><a href="#" class="has-fake bk pod">キャンペーン一覧とか</a></li>
+	</ul>
+
+
+	<ul class="lv-b pale mod">
+		<li><a href="#" class="hl bk tx-l b c">.lv-b.pale .hl</a></li>
+		<li><a href="#" class="bk pod tx-std">上線：#ede8e0<br>下線：#fff</a></li>
+		<li><a href="#" class="bk pod tx-std">上線：#ede8e0<br>下線：#fff</a></li>
+	</ul>
+	<ul class="lv-b pale mod">
+		<li><a href="#" class="has-arrow tx-main b c">一行リスト</a></li>
+	</ul>
+	<ul class="lv-b deep-a mod">
+		<li><a href="#" class="hl bk tx-l b c">.lv-b.deep-a .hl</a></li>
+		<li><a href="#" class="bk pod">文字：#D9D9D9<br>背景：#333</a></li>
+		<li><a href="#" class="bk pod">上線：#262626<br>下線：#404040</a></li>
+	</ul>
+	<ul class="lv-b deep-a mod">
+		<li><a href="#" class="has-arrow tx-main b c">一行リスト</a></li>
+	</ul>
+	<ul class="lv-b deep-b mod">
+		<li><a href="#" class="hl bk tx-l b c">.lv-b.deep-b .hl</a></li>
+		<li><a href="#" class="bk pod">文字：#D9D9D9<br>背景：#262626</a></li>
+		<li><a href="#" class="bk pod">上線：#1A1A1A<br>下線：#333</a></li>
+	</ul>
+	<ul class="lv-b deep-b mod">
+		<li><a href="#" class="has-arrow tx-main b c">一行リスト</a></li>
+	</ul>
+	<ul class="lv-b deep mod">
+		<li><a href="#" class="hl bk tx-l b c">.lv-b.deep .hl</a></li>
+		<li><a href="#" class="bk pod">文字：#D9D9D9<br>背景：#1a1a1a</a></li>
+		<li><a href="#" class="bk pod">上線：#000<br>下線：#262626</a></li>
+	</ul>
+	<ul class="lv-b deep mod">
+		<li><a href="#" class="has-arrow tx-main b c">一行リスト</a></li>
+	</ul>
+
+	<ul class="lv-light-b mod">
+		<li><a href="#" class="bk pod tx-l b">.lv-light-b</a></li>
+		<li><a href="#" class="bk pod">文字：#D9D9D9<br>背景：#1a1a1a</a></li>
+		<li><a href="#" class="bk pod">上線：#000<br>下線：#262626</a></li>
+	</ul>
+</section>
+<section>
+<!-- ///////////////////////////////////////  -->
+	<div class="h2" id="rules">Rules</div>
+<!-- ///////////////////////////////////////  -->
+	<hr class="rule">
+	<pre>.rule {
+	border-top: 1px #ede8e0 solid;
+	border-bottom: 1px #fff solid;
+	}</pre>
+	<hr class="rule">
+
+	<hr class="rule deep">
+	<pre>.rule.deep {
+	border-top: 1px #262626 solid;
+	border-bottom: 1px #404040 solid;
+	}</pre>
+	<hr class="rule deep">
+
+	<hr class="rule deep-a">
+	<pre>.rule.deep-a {
+	border-top: 1px #1a1a1a solid;
+	border-bottom: 1px #333 solid;
+	}</pre>
+	<hr class="rule deep-a">
+
+	<hr class="rule light-a">
+	<pre>// 廃止予定
+	.rule.light-a {
+	border-top: 1px #E0DBD3  dashed;
+	border-bottom: 1px #FFFAF2 dashed;
+	}</pre>
+	<hr class="rule light-a">
+
+	<hr class="rule dashed pale">
+	<pre>rule.dashed.pale {
+	border-top: 1px #ede8e0 solid;
+	border-bottom: 1px #fff solid;
+	}</pre>
+	<hr class="rule dashed pale">
+    
+  <hr class="bb vivid">
+	<pre>bb.vivid {
+	border-bottom: 1px #FF668E solid;
+	}</pre>
+	<hr class="bb vivid">
+</section>
+
+<section>
+<!-- ///////////////////////////////////////  -->
+	<div class="h2" id="headlines">Headlines</div>
+<!-- ///////////////////////////////////////  -->
+
+	<p class="hl-a deep mod">見出し .hl-a.deep 
+		<span class="timestamp">timestamp</span></p>
+	<p class="hl-a deep-a mod">見出し .hl-a.deep-a</p>
+	<p class="hl-c pale mod pod">見出し .hl-c.pale.pod</p>
+	<p class="hl-c deep mod pod tx-fff">見出し .hl-c.deep.pod.tx-fff</p>
+	<p class="hl-d pale mod pod ref">見出し .hl-d.pale.pod.ref 
+		<span class="timestamp">timestamp</span></p>
+</section>
+<section>
+<!-- ///////////////////////////////////////  -->
+	<div class="h2" id="buttons">Buttons</div>
+<!-- ///////////////////////////////////////  -->
+
+	<a href="#" class="btn">ボタン .btn</a>
+	<a href="#" class="btn primary">ボタン .btn.primary</a>
+	<a href="#" class="btn secondary">ボタン .btn.secondary</a>
+	<a href="#" class="btn dark-b">いらない? ボタン .btn.dark-b</a>
+	<a href="#" class="btn deep">ボタン .btn.deep</a>
+	<a href="#" class="btn pale">ボタン .btn.pale</a>
+    <a href="#" class="btn std">ボタン .btn.std</a>
+    <a href="#" class="btn tw">ボタン .btn.tw</a>
+    <a href="#" class="btn fb">ボタン .btn.fb</a>
+    
+    <a href="#" class="btn-c is-active mod bk b"><div>ボタン .btn-c.is-active.mod.bk.b</div></a>
+    <a href="#" class="btn-c mod bk b"><div>ボタン .btn-c.mod.bk.b</div></a>
+</section>
+<section>
+<!-- ///////////////////////////////////////  -->
+	<div class="h2" id="boxes">Boxes</div>
+<!-- ///////////////////////////////////////  -->
+	<div class="bx-dark-c pod mod">bx-dark-c.pod　4月4日の編集部Pick up!</div>
+
+	<div class="bx-a bx-a-light mod">
+		<h3>見出し h3.bx-a.bx-a-light</h3>
+		<ul>
+			<li><a href="">bx-a inline link ul&gt;li&gt;a</a></li>
+			<li><a href="">bx-a inline link ul&gt;li&gt;a</a></li>
+			<li><a href="">bx-a inline link ul&gt;li&gt;a</a></li>
+		</ul>
+	</div>
+
+	<div class="bx-a bx-a-dark mod">
+		<h3>見出し h3.bx-a.bx-a-dark</h3>
+		<ul>
+			<li><a href="">bx-a inline link ul&gt;li&gt;a</a></li>
+			<li><a href="">bx-a inline link ul&gt;li&gt;a</a></li>
+			<li><a href="">bx-a inline link ul&gt;li&gt;a</a></li>
+		</ul>
+	</div>
+
+	 <p class="bx-c deep mod pod">
+	 	<a href="#" class="tx-fff tx-l">.bx-c.deep</a></p>
+
+	 <p class="mod r">
+	 	<a href="#" class="bx-d pale tx-main">
+	 		bx-d.pale.tx-main このジャンルの人気トーク</a></p>
+
+	 <p class="bx-e deep mod pod">
+	 	<a href="#" class="tx-fff tx-l">.bx-e.deep</a></p>
+
+    <a href="#" class="bx-f ibk mg-t5 r-s tx-weak b" style="padding:7px 12px">.bx-f.ibk.mg-t5.r-s.tx-weak.b</a>
+
+	<div class="bx-comment mod">
+		<p class="pod b">.bx-comment</p class="">
+	</div>
+    
+     <div class="bx-slider-switch deep" style="height:45px;">
+     <p>bx-slider-switch > bx-switch</p>
+        <div class="bx-switch">
+          <span class="off">OFF</span>
+          <span class="on">ON</span>
+          <span class="switch"></span>
+        </div>
+      </div>
+
+	<div class="hl-a deep ref pod tx-fff mod">
+		検索結果
+		<a href="#" class="btn-choice n">.btn-choice.n 新しい順
+			<span style="font-size:8px;vertical-align:1px">▼</span></a>
+		<div class="bx-order pod"><a href="#">.bx-order</a></div>
+	</div>
+
+	<div class="bx-recd" style="margin-top:50px">
+		<h3 class="hl"><div>.bx-recd .hl div　このトークを見た人が見ているトーク</div></h3>
+	</div>
+</section>
+<section>
+<!-- ///////////////////////////////////////  -->
+	<div class="h2" id="navigation">Navigation</div>
+<!-- ///////////////////////////////////////  -->
+
+	<div class="nav-pager" style="margin:10px -10px">
+		<p class="pod">nav-pager &gt; pager-direct &gt; pager-steps</p>
+		<ul class="pager-direct">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#" class="active">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+		</ul>
+		<ul class="pager-steps">
+			<li><a href="#" class="back"><i class="ir">&lt;&lt;</i></a></li>
+			<li><a href="#">前へ</a></li>
+			<li><a href="#" class="disabled">次へ</a></li>
+			<li><a href="#" class="go"><i class="ir">&gt;&gt;</i></a></li>
+		</ul>
+	</div>
+
+
+	<div class="nav-pager bg-dark-b" style="margin:10px -10px;padding-bottom:10px">
+		<p class="pod">nav-pager &gt; pager-direct &gt; pager-steps.deep</p>
+		<ul class="pager-direct">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#" class="active">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+		</ul>
+		<ul class="pager-steps deep">
+			<li><a href="#" class="back"><i class="ir">&lt;&lt;</i></a></li>
+			<li><a href="#">前へ</a></li>
+			<li><a href="#" class="disabled">次へ</a></li>
+			<li><a href="#" class="go disabled"><i class="ir">&gt;&gt;</i></a></li>
+		</ul>
+
+		<p class="mod">pager-steps2</p>
+	    <ul class="pager-steps2 deep clearfix mod c">
+	      <li class="fl" style="border-right:1px #262626 solid;">
+	        <a href="#" class="back is-disabled bk" style="padding:10px 10px 5px">
+	        <p class="ref mg-b5 tx-fff b"><i></i>前の記事</p>
+	        <p class="tx-std2 tx-s elps">...</p></a></li>
+	      <li class="fl" style="border-left:1px #404040 solid;">
+	        <a href="#" class="go bk" style="padding:10px 10px 5px">
+	        <p class="ref mg-b5 tx-fff b">次の記事<i></i></p>
+	        <p class="tx-std2 tx-s elps">当たり前のことを当たり前にしたい</p></a></li>
+	    </ul>
+
+	</div>
+
+	<p class="b">.nav-pager-goback.clearfix.b.pod</p>
+	<ul class="nav-pager-goback clearfix b pod">
+		<li><a href="#" class="has-fake tx-weak tx-ul back" style="padding:2px 22px">前のニュース</a></li>
+		<li><a href="#" class="has-fake tx-weak tx-ul go" style="padding:2px 22px">次のニュース</a></li>
+	</ul>
+
+	<div class="sub-nav-category pale mod">
+        <h3 class="hl tx-m b">カテゴリから sub-nav-category.pale .hl</h3>
+        <ul class="has-ico-categories clearfix">
+          <li class="c-love"><a href="/fav/"><i></i>恋愛</a></li>
+          <li class="c-nightlife"><a href="/fav/"><i></i>ナイトライフ</a></li>
+          <li class="c-mind"><a href="/fav/"><i></i>ココロとカラダ</a></li>
+          <li class="c-work"><a href="/fav/"><i></i>お仕事</a></li>
+          <li class="c-home"><a href="/fav/"><i></i>家庭</a></li>
+          <li class="c-chat"><a href="/fav/"><i></i>雑談</a></li>
+          <li class="c-all last"><a href="/fav/"><i></i>すべて</a></li>
+          <li class="c-rank last"><a href="/fav/"><i></i>人気ランキング</a></li> 
+        </ul>
+    </div>
+
+	<div class="sub-nav-category deep mod">
+        <h3 class="hl tx-m b">カテゴリから sub-nav-category.deep .hl</h3>
+        <ul class="has-ico-categories clearfix">
+          <li class="c-love"><a href="/fav/"><i></i>恋愛</a></li>
+          <li class="c-nightlife"><a href="/fav/"><i></i>ナイトライフ</a></li>
+          <li class="c-mind"><a href="/fav/"><i></i>ココロとカラダ</a></li>
+          <li class="c-work"><a href="/fav/"><i></i>お仕事</a></li>
+          <li class="c-home"><a href="/fav/"><i></i>家庭</a></li>
+          <li class="c-chat"><a href="/fav/"><i></i>雑談</a></li>
+          <li class="c-all last"><a href="/fav/"><i></i>すべて</a></li>
+          <li class="c-rank last"><a href="/fav/"><i></i>人気ランキング</a></li> 
+        </ul>
+    </div>
+    
+    
+</section>
+<section>
+<!-- ///////////////////////////////////////  -->
+	<div class="h2" id="forms">Forms</div>
+<!-- ///////////////////////////////////////  -->
+	<form action="#" method="post" class="mod">
+	    <input type="text" value="" class="f-text mbm" placeholder="input.f-text">
+	    <select class="f-slct mbm">
+	      <option>select.f-slct</option>
+	      <option value="">option</option>
+	      <option value="">option</option>
+	    </select>
+	    <textarea rows="10" class="f-area tx-weak">textarea.f-area</textarea>
+	</form>
+</section>
+		<p><a href="#" class="btn pale">⇧ページトップへ戻る</a></p>
+  	</div><!-- /main -->
+  </div><!-- /container -->
+  <script src="/files/js/zepto.min.js"></script>
+  <script>
+	$('.js-menu').on('click', function(e){
+	    e.preventDefault();
+  		$('.js-order').toggleClass('is-hidden');
+	});
+  </script>
+</body>
+</html>
